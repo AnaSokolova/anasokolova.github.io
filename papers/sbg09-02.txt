@@ -1,0 +1,29 @@
+---------------------------------------------------------------------------------
+Concurrency and Scalability versus Fragmentation and Compaction with Compact-fit
+---------------------------------------------------------------------------------
+by Silviu S. Craciunas, Christoph Kirsch, Hannes Payer, Harald Roeck, and 
+   Ana Sokolova, 
+--------------------------------------------------------------------------------- 
+
+Abstract:
+---------------------------------------------------------------------------------
+We study, formally and experimentally, the trade-off in temporal
+and spatial performance when managing contiguous pieces of memory
+using the explicit, dynamic memory management system Compact-fit
+(CF). The key property of CF is that temporal and spatial performance
+can be bounded, related, and predicted in constant time through the
+notion of partial and incremental compaction. Partial compaction 
+determines the maximally tolerated degree of memory fragmentation. 
+Incremental compaction, introduced here, determines the maximal 
+amount of memory involved in any, logically atomic portion of a 
+compaction operation. We explore CF’s potential application space on 
+(1) multiprocessor and multicore systems as well as on (2) memory-
+constrained uniprocessor systems. For (1), we argue that little or 
+no compaction is likely to avoid the worst case in temporal as well 
+as spatial performance but also observe that scalability only improves 
+by a constant factor. Scalability can be further improved 
+significantly by reducing overall data sharing through separate 
+instances of Compact-fit. For (2), we observe that incremental
+compaction can effectively trade-off throughput and memory
+fragmentation for lower latency.
+----------------------------------------------------------------------------------

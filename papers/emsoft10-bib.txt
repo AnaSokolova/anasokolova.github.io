@@ -1,0 +1,8 @@
+@Inproceedings{EMSOFT2010:PAVBS,
+  author = {S.C. Craciunas and C.M. Kirsch and A. Sokolova},
+  title = {Power-aware Temporal Isolation with Variable-Bandwidth Servers},
+  booktitle = {Proc.~EMSOFT},
+  publisher = {ACM},
+  pages = {259-268}
+  year = {2010},
+}

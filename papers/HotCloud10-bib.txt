@@ -1,0 +1,7 @@
+@InProceedings{HotCloud10,
+  author = {S.S. Craciunas and A. Haas and C.M. Kirsch and H. Payer and H. R{\"o}ck and A. Rottmann and A. Sokolova and R. Trummer and J. Love and R. Sengupta},
+  title = {Information-Acquisition-as-a-Service for Cyber-Physical Cloud Computing},
+  booktitle = {Proc. Workshop on Hot Topics in Cloud Computing (HotCloud)},
+  year = {2010},
+  publisher = {USENIX},
+}

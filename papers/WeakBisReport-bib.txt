@@ -1,0 +1,7 @@
+@techreport{tue0416,
+  author = {Sokolova, A. and Vink, E.P. de and Woracek, H.},
+  title = {Weak bisimulation for action-type coalgebras},
+  institution = {Technische Universiteit Eindhoven},
+  number = {CSR 04--16},
+  year = {2004}
+}

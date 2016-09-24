@@ -1,0 +1,8 @@
+@TechReport{SBG10-08,
+  author = {C.M. Kirsch and L. Lopes and E.R.B. Marques and A. Sokolova},
+  title = {Runtime Programming through Model-Preserving, Scalable Runtime Patches},
+  institution = {Department of Computer Sciences, University of Salzburg},
+  number = {2010-08},
+  month = {December},
+  year = {2010},
+}

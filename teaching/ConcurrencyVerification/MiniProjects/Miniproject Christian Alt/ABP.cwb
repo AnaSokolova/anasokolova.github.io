@@ -1,0 +1,87 @@
+* Alternating Bit Protocol
+*
+*Actions:
+*sendmsg0 - send a message with additional bit 0
+*sendmsg1 - send a message with additional bit 1
+*recvmsg0 - receive a message with additional bit 0
+*recvmsg1 - receive a message with additional bit 1
+*sendack0 - send an acknowledgement with additional bit 0
+*sendack1 - send an acknowledgement with additional bit 1
+*recvack0 - receive an acknowledgement with additional bit 0
+*recvack1 - receive an acknowledgement with additional bit 1
+*deliver0 - deliver a message with additional bit 0
+*deilver1 - deliver a message with additional bit 1
+*timeout 
+
+
+* The Sender sends a message with a corresponding bit and then waits until it receives the acknowledgement or a timeout happens.
+* In case of an acknowledgement it toggles the bit and sends the next message, in case of a timeout it resends the message.
+* The agent Sender0 sends a message that has 0 as additional bit (sendmsg0), Sender 1 sends a message with a 1 as additional bit (sendmsg1).
+agent Sender0 = 'sendmsg0.Sender0Waiting;
+agent Sender0Waiting = recvack0.Sender1 + timeout.Sender0 ;
+agent Sender1 = 'sendmsg1.Sender1Waiting;
+agent Sender1Waiting = recvack1.Sender0 + timeout.Sender1;
+
+*The Receiver receives a message, either recvmsg0 or recvmsg1 (with 0 and 1 as additional bits)
+*If the corresponding bit is different to the one in the last message it sends an acknowledgement and delivers the message to the application.
+*If the corresponding bit is equal to the one of the last message it just sends the acknowledgement, because it already got that message.
+*The agent Receiver0 is waiting for a message with the corresponding bit 0, agent Receiver1 waits for a message with corresponding bit 1.
+agent Receiver0 = recvmsg0.'sendack0.'deliver0.Receiver1 + recvmsg1.'sendack1.Receiver0;
+agent Receiver1 = recvmsg1.'sendack1.'deliver1.Receiver0 + recvmsg0.'sendack0.Receiver1;
+
+agent Timeout = 'timeout.Timeout;
+
+
+*The agent PerfectMedium is always delivering the sent message. It does not allow the sender to overwrite the message. Therefore it will deadlock if the sender has a timeout.
+*If the timeouts are switched off it works perfectly.
+agent PerfectMedium = sendmsg1.PerfectMediumMsg1 + sendmsg0.PerfectMediumMsg0 + sendack0.PerfectMediumAck0 + sendack1.PerfectMediumAck1;
+agent PerfectMediumMsg0 = 'recvmsg0.PerfectMedium;
+agent PerfectMediumMsg1 = 'recvmsg1.PerfectMedium;
+agent PerfectMediumAck0 = 'recvack0.PerfectMedium;
+agent PerfectMediumAck1 = 'recvack1.PerfectMedium;
+
+*The agent Medium is a perfect medium that does not lose messages, but messages can be overwritten by the sender.
+*This is important because the sender could otherwise deadlock if a timeout happens.
+*If the Timeout deadlock is left out(like in the agent ABP) it is not necessary for the medium to allow overwriting of messages.
+agent Medium = sendmsg1.MediumMsg1 + sendmsg0.MediumMsg0 + sendack0.MediumAck0 + sendack1.MediumAck1;
+agent MediumMsg0 = 'recvmsg0.Medium + sendmsg1.MediumMsg1 + sendmsg0.MediumMsg0 + sendack0.MediumAck0 + sendack1.MediumAck1;  
+agent MediumMsg1 = 'recvmsg1.Medium + sendmsg1.MediumMsg1 + sendmsg0.MediumMsg0 + sendack0.MediumAck0 + sendack1.MediumAck1;
+agent MediumAck0 = 'recvack0.Medium + sendmsg1.MediumMsg1 + sendmsg0.MediumMsg0 + sendack0.MediumAck0 + sendack1.MediumAck1;
+agent MediumAck1 = 'recvack1.Medium + sendmsg1.MediumMsg1 + sendmsg0.MediumMsg0 + sendack0.MediumAck0 + sendack1.MediumAck1;
+
+*The agent LossyMedium is a medium that might lose messages
+agent LossyMedium = sendmsg1.LossyMediumMsg1 + sendmsg0.LossyMediumMsg0 + sendack0.LossyMediumAck0 + sendack1.LossyMediumAck1;
+agent LossyMediumMsg0 = 'recvmsg0.LossyMedium + tau.LossyMedium;
+agent LossyMediumMsg1 = 'recvmsg1.LossyMedium + tau.LossyMedium;
+agent LossyMediumAck0 = 'recvack0.LossyMedium + tau.LossyMedium;
+agent LossyMediumAck1 = 'recvack1.LossyMedium + tau.LossyMedium;
+
+
+*The agent DuplicatingMedium can lose and duplicate sent messages
+agent DuplicatingMedium = sendmsg1.DuplicatingMediumMsg1 + sendmsg0.DuplicatingMediumMsg0 + sendack0.DuplicatingMediumAck0 + sendack1.DuplicatingMediumAck1;
+agent DuplicatingMediumMsg0 = 'recvmsg0.DuplicatingMediumMsg0 + tau.DuplicatingMedium;
+agent DuplicatingMediumMsg1 = 'recvmsg1.DuplicatingMediumMsg1 + tau.DuplicatingMedium;
+agent DuplicatingMediumAck0 = 'recvack0.DuplicatingMediumAck0 + tau.DuplicatingMedium;
+agent DuplicatingMediumAck1 = 'recvack1.DuplicatingMediumAck1 + tau.DuplicatingMedium;
+
+ 
+*The agent ABP connects a Sender and a Receiver, both starting with the additional bit 0, using a perfect medium and without timeouts
+agent ABP = (Sender0|Receiver0|PerfectMedium)\L;
+
+*ABP0 also uses a perfect medium, but the sender might get timeouts and resend the last message.
+agent ABP0 = (Sender0|Receiver0|Timeout|Medium)\L;
+
+*ABP1 uses the LossyMedium that might lose messages.
+agent ABP1 = (Sender0|Receiver0|Timeout|LossyMedium)\L;
+
+*ABP2 uses the DuplicatingMedium that might duplicate and lose sent messages.
+agent ABP2 = (Sender0|Receiver0|Timeout|DuplicatingMedium)\L;
+
+*ABP3 shows that the PerfectMedium in combination with timeouts will deadlock and therefore not satisfy the specification.
+agent ABP3 = (Sender0|Receiver0|PerfectMedium|Timeout)\L;
+set L = {sendmsg0,sendmsg1,recvmsg0,recvmsg1,sendack0,sendack1,recvack0,recvack1,timeout};
+
+*The Specification for the alternating bit protocol:
+*The agent is alternately delivering messages with additional bits 0 and 1.
+agent ABPSpec0 = 'deliver0.ABPSpec1;
+agent ABPSpec1 = 'deliver1.ABPSpec0; 

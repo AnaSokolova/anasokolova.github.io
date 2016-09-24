@@ -1,0 +1,6 @@
+@InProceedings{RePP09,
+  author = {S.S. Craciunas and C.M. Kirsch and A. Sokolova},
+  title = {A Workload-oriented Programming Model for Temporal Isolation with {VBS}},
+  booktitle = {Online Proc. Workshop on Reconciling Performance with Predictability (RePP)},
+  year = {2009},
+}

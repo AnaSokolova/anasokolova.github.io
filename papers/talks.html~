@@ -1,0 +1,82 @@
+<html>
+
+<body text = "black" link = "7e1111" vlink = "782f2f">
+
+<br>
+<CENTER>
+<TABLE BORDER=0 COLS=2 WIDTH="100%" >
+<TR ALIGN=CENTER VALIGN=CENTER>
+<TD ALIGN=LEFT width=100><IMG SRC="../images/Bookshelf.gif"></TD>
+<TD ALIGN=left><h2>Ana Sokolova: some talks</h2></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<br>
+<hr>
+<br>
+
+<ul>
+<li>
+<strong> On Semantic Relations: From probabilistic systems to coalgebras and back </strong><br>
+<ul>
+<li> <a href="http://iml.univ-mrs.fr/geocal06/">GEOCAL'06</a> meeting, workshop on 
+ <a href="http://www.pps.jussieu.fr/~danos/geocal06_pts.php">Probabilistic Transition Systems</a>, 
+<br><a href="http://www.cirm.univ-mrs.fr/">CIRM</a>, Marseille - Luminy, 1st of March 2006 (90 min. talk)
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=30 width=30><A HREF="CIRM-Presentation.pdf"> slides (pdf)</A> &nbsp&nbsp
+</ul>
+
+<br><br>
+<li>
+<strong> Coalgebraic analysis of probabilistic systems </strong><br>
+PhD defense -  lekenpraatje (short talk 10 min), 3-11-2005, TU Eindhoven 
+<br>
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=30 width=30><A HREF="DefensePres.pdf"> slides (pdf)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="../defense.html"> more-info</A> &nbsp&nbsp
+<br><br>
+<li>
+<strong> Weak bisimulation for action-type coalgebras </strong><br>
+<ul>
+<li> 
+<a href="http://www.win.tue.nl/zic/">ZIC colloquium</a>, TU Eindhoven, December 2004, and
+<br><a href="http://www.ii.pmf.ukim.edu.mk">Institute of Informatics</a>, PMF, Skopje, June 2004 <br>
+<a href="http://www.cwi.nl/htbin/acg/ACG.php4">ACG Seminar</a>, CWI, Amsterdam, May 2004,
+<br>(long detailed talk) 
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=30 width=30><A HREF="WeakBis-ACG.pdf"> slides (pdf)</A> &nbsp&nbsp
+<li> <a href="http://www.itu.dk/research/theory/ctcs2004/">CTCS'04</a>, Kopenhagen, Denmark, August 2004 (short talk 30 min.)
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=30 width=30><A HREF="WeakBis-CTCS.pdf"> slides (pdf)</A> &nbsp&nbsp
+</ul>
+<br><br>
+<li>
+<strong> A hierarchy of probabilistic system types </strong><br> 
+<ul>
+<li> <a href="http://fmt.cs.utwente.nl/">FMT</a> group, TU Twente, April 2005 
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=30 width=30><A HREF="Hierarchy-Twente.pdf"> slides (pdf)</A> &nbsp&nbsp
+<li> <a href="http://www.ii.pmf.ukim.edu.mk">Institute of Informatics</a>, PMF, Skopje, June 2003 (the conference talk from below) 
+<br>
+<li> <a href="http://www.win.tue.nl/zic/">ZIC Colloquium</a>, TU Eindhoven, May 2003 (long detailed talk) 
+<br>
+Together with <a href="http://www.nordfrost.de/fbartels/index.html"> Falk Bartels
+</a> 
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=30 width=30><A HREF="Hierarchy-ZIC.pdf"> slides (pdf)</A> &nbsp&nbsp
+<li> <a href="http://www.mathematik.uni-marburg.de/~cmcs/">CMCS'03</a>, Warsaw, Polland, April 2003 (short talk 30 min.)
+<br>
+Together with <a href="http://www.nordfrost.de/fbartels/index.html"> Falk Bartels
+</a> <IMG BORDER=0 SRC="../images/archiv.gif" heigth=30 width=30><A HREF="Hierarchy-CMCS.pdf"> slides (pdf)</A> &nbsp&nbsp
+<li> <a href="http://www.cwi.nl/htbin/acg/ACG.php4">ACG Seminar</a>, CWI, Amsterdam, March 2003 (long detailed talk) 
+<br>
+Together with <a href="http://www.nordfrost.de/fbartels/index.html"> Falk Bartels
+</a> 
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=30 width=30><A HREF="Hierarchy-ACG.pdf"> slides (pdf)</A> &nbsp&nbsp
+</ul>
+<br><br>
+<li><strong> On relational properties of lumpability </strong><br>
+<a href= "http://www.ics.ele.tue.nl/~svlad/ees5202/">(A)MaPAoTS</a> project meeting, June 2003, TU Eindhoven
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=30 width=30><A HREF="Pres-17-06-03-Lump.pdf"> slides (pdf)</A> &nbsp&nbsp
+</ul>
+<br>
+<hr>
+<br>
+<A HREF="../index.html"> <IMG SRC="../images/ltop.gif" border=0 HSPACE=10 VSPACE=5 ALIGN=TOP > back home </a> 
+</body>
+</html>

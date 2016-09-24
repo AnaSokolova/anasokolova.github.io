@@ -1,0 +1,20 @@
+Falk Bartels, Ana Sokolova, Erik de Vink:
+A hierarchy of probabilistic system types, CMCS03
+
+Abstract
+--------
+
+
+We arrange various types of probabilistic transition systems studied
+in the literature in an expressiveness hierarchy. The expressiveness
+criterion is the existence of an embedding of systems of the one class
+into those of the other. An embedding here is a system transformation
+which preserves and reflects bisimilarity. To facilitate the task, we
+define the classes of systems and the corresponding notion of
+bisimilarity coalgebraically and use the new technical result that an
+embedding arises from a natural transformation with injective
+components between the two coalgebra functors under
+consideration. Moreover, we argue that coalgebraic bisimilarity,
+on which we base our results, coincides with the concrete notions
+proposed in the literature for the different system classes, exemplified
+by a detailed proof for the case of general Segala-type systems.

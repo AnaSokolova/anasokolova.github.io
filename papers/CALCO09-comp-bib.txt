@@ -1,0 +1,8 @@
+@InProceedings{CALCO09-comp,
+  author = {I. Hasuo, C. Heunen, B. Jacobs and A. Sokolova},
+  title = {Coalgebraic components in a many-sorted microcosm},
+  booktitle = {Proc. CALCO},
+  year = {2009},
+  publisher = {LNCS~5728},
+  pages = {64--81}
+}

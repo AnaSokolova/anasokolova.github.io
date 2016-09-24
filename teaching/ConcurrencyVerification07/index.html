@@ -1,0 +1,367 @@
+<html>
+
+<head>
+<title>Introduction to Concurrency and Verification, Winter semester 2007/2008</title>
+</head>
+
+<body text = "black" link = "7e1111" vlink = "782f2f">
+<h2> Introduction to Concurrency and Verification, Winter semester 2007/2008</h2>
+
+<h3> <a href="http://www.uni-salzburg.at/portal/page?_pageid=1525,1&_dad=portal&_schema=PORTAL">Department of Computer 
+Sciences</a>,  <a href="http://www.uni-salzburg.at/portal/page?_pageid=53,1&_dad=portal&_schema=PORTAL"> 
+University of Salzburg</a></h3>
+
+
+
+<b>Lecturer:</b>    &nbsp;&nbsp;&nbsp;&nbsp;   <a href="http://cs.uni-salzburg.at/~anas">Dr. A. Sokolova</a>, ana.sokolova"at"cs.uni-salzburg.at, office 2.17  
+(maybe sometimes <a href="http://cs.uni-salzburg.at/~ck">Prof. C.M. Kirsch</a>)<br><br>
+
+<b>Schedule:</b>   &nbsp;&nbsp;&nbsp;&nbsp;    Tuesdays 3pm-5pm, Wednesdays 2pm-3pm<br><br>
+
+<b>First meeting:</b> &nbsp;&nbsp;  Tuesday, 2.10.2007, 2pm, room T06 <br><br>
+
+
+
+<b>Language:</b>    &nbsp;&nbsp;&nbsp;&nbsp;   English <br><hr>
+
+<font color = "7e1111"><b>The course may also be taken by PhD students</b> </font><br><hr>
+
+<b>Course description: </b> The aim of this course is to introduce advanced mathematical models for the formal description and
+ analysis of programs, with emphasis on parallel, reactive systems. The course consists of 3 hours lectures per
+ week and lasts for about 15 weeks. 
+It deals with semantic models for parallel systems, and logics for the description of their properties. 
+As part of the course material, we will also introduce automatic verification tools, and hint at some of 
+the implementation techniques underlying them. The teaching consists of lectures interspersed with exercises.            
+
+<br><br>
+Via this course a practicaly oriented student learns the need of abstraction, formal specification and verification; 
+the student interested in theory gets a solid introduction to formal methods for specification and verification. 
+In particular, we will:
+model simple systems using transition systems and (CCS) process expressions, 
+deal with various notions of behaviour equivalences, learn the need of abstraction, 
+formulate (and verify) properties of systems in Hennessi-Milner logic.
+<br><hr>
+
+<b>Literature: </b> 
+
+<ul>
+      <li>  Brand new textbook: <b> Reactive Systems: Modelling, Specification and Verification </b> by 
+<a href="http://www.cs.aau.dk/~luca/">Luca Aceto<a>, <a href="http://www.cs.aau.dk/~annai/">Anna Ingolsfdottir</a>, 
+<a href="http://www.cs.aau.dk/~kgl/">Kim G. Larsen</a> and <a href="http://www.brics.dk/~srba/">Jiri Srba</a>. Cambridge University Press, 2007. Check the publishers web page
+ <a href = "http://www.cambridge.org/uk/catalogue/catalogue.asp?isbn=9780521875462">  here</a>. The book can also be ordered
+ via <a href = "http://www.amazon.co.uk"> Amazon.co.uk </a>. Several copies should be available at the department library in October.
+
+      <li>  Scriptum: <b>Introduction to Process Theory</b>, by <a href="http://www.win.tue.nl/~keesm/">Kees 
+Middelburg</a> and <a href="http://www.win.tue.nl/~michelr/">Michel Reniers</a>, Technische Universiteit Eindhoven 2004,
+ available <a href="http://www.win.tue.nl/~michelr/procestheorie.html">online</a>.
+
+      <li> Additional literature links will also be assembled here as needed, during the semester.
+
+   </ul>
+<hr>
+
+<b>What is this theory good for? </b> A typical question asked by (practically oriented) students. The authors of the 
+book Reactive Systems have compiled a nice 
+<a href="http://www.ru.is/kennarar/luca/MV/">webpage</a> answering this question. Click on the corresponding link on the left to get to the needed subpage.             
+
+<br><hr>
+
+<b>Prerequisites: </b> None, the course material is self-contained, as is the textbook and the scriptum. 
+Knowledge of basics of theoretical computer science like logic for computer science or automata theory is an asset. 
+
+<br><hr>
+
+<b>Exam: </b>  This is a VP course. There will be three exam possibilities in February/March. 
+The exam is written consisting of several excersises from the material covered during the course (we will do an open-book exam). Additionally, 
+the homeworks and the
+mini project, will also contribute to the final grade.
+(mini project = 25%, homeworks = 10%, exam - the rest)
+
+<br>
+
+<b>Exam dates: </b> Tuesday, 29.1.2008, during classes, duration 2-3 hours. Thursday, 14.2.2008, 10 am, duration 2-3 hours. 
+Wednesday, 5.3.2008, 2pm, duration 2-3 hours.
+
+<br>
+
+<b>Mini project: </b> The description of the mini project is given in the following <a href = "ICV-ABP.pdf">pdf file</a>.
+ 
+
+
+
+<br>
+<hr>
+
+<b>Schedule: </b> 
+<ul>
+ <li> Week 2, Tuesday 9.10.07: Introduction to reactive systems, LTS, CCS informally (for sequential processes). 
+Book - up to page 10 and Section 2.2.1 (LTS), Scriptum - up to page 22 (Sections 1.1.-1.4.).  HW: Exercise 2.3. 
+Wednesday 10.10.07: CCS informally (continued). Book - up to page 21. 
+
+<li> Week 3, Tuesday 16.10.07: Formal syntax and semantics of CCS. 
+Book: pages 21-27. Wednesday 17.10.07: More examples. Value passing CCS. Book: pages 27-31. <br>HW: Exercise 2.13:
+
+Consider the process B defined as 
+<br>
+B = push(x).(C(x)^B) + empty.B, C(x) = push(y).(C(y)^C(x)) + -pop-(x).D, D = o(x).C(x) + -e-.B
+
+where -pop-, and -e- denote co-names, and the linking combinator ^ is defined as:<br>
+P^Q = P[p'/p,e'/e, o'/o]|Q[p'/push, e'/empty, o'/pop]\{p',e',o'}. 
+<br>
+Draw the initial part of the transition graph for this process. What behavior do you think B implements?
+
+<li> Week 4, Tuesday 23.10.07: Behaviour relations: isomorphism, trace equivalence, strong bisimilarity. Examples. 
+ HW: Exercise 3.2.2. 
+Wednesday 24.10.07: Strong bisimilarity (continued), examples. Book: pages 31-42, Scriptum: pages 22-40 (Section 1.5).
+HW: Exercise 3.3 (book) and Exercise 1.5.5 (Scriptum).
+
+<li> Week 5, Tuesday 30.10.07: Properties of bisimilarity. 
+ HW: Exercise 3.7. Book: pages 42-50.
+Wednesday 31.10.07: No class (Senatstag).
+
+<li> Week 6, Tuesday 6.11.07: Counters, buffers, meaningful examples. Game characterization of bisimilarity. 
+ HW: Exercise 3.17.3. Book: pages 50 - 53 and 65 - 67. Wednesday 7.11.07: Bisimulation games (examples). Weak bisimulation.
+HW: Exercise 3.37 (part of). Book pages 67 - 70 and 53 - 57.
+
+<li> Week 7, Tuesday 20.11.07: Weak bisimilarity (properties and examples), CWB (example). HW: Exercise 3.26 and Exercise 3.34.
+Book: pages 57 - 65. Wednesday 21.11.07: Weak bisimilarity games, decidability and complexity results (overview). Posets.
+Book: pages 70 - 76.
+
+<li> Week 8, Tuesday 27.11.07: Fixed points and bisimilarity. Book: pages 76 - 87. Wednesday 28.11.07: Computing bisimilarity.
+Henessy-Milner logic, syntax and semantics. HW: Write an algorithm that computes bisimilarity on a given LTS. What is the worst case complexity of your algorithm?
+Book: pages 87 - 91.
+
+<li> Week 9, Tuesday 4.12.07: Hennessy-Milner logic. Book: pages 91 - 98. Wednesday 5.12.07: Expressivity of Hennessy-Milner logic. 
+HW: Exercise 5.11. Book: pages 98 - 102.
+
+<li> Week 10, Tuesday 11.12.07: Hennessy-Milner logic with recursion. Book: pages 102-110. Wednesday 12.12.07: Hennessy-Milner logic with recursion. 
+HW: Exercise 6.5. Book: pages 110 - 115.
+
+<li> Week 11, Tuesday 18.12.07: Game characterization for HML with recursion. Mutually recursive equational systems. 
+HW: Exercise 6.7 and 6.8.3. Book: pages 115-125. Wednesday 19.12.07: Characteristic properties. 
+Book: pages 125 - 134.
+
+<li> Week 12, Tuesday 8.1.08: Mixing largest and least fixed points. Modeling and anallysis of mutual exclusion. 
+ Book: pages 134-146. Wednesday 9.1.08: Specifying ME in HML and in CCS. 
+HW: Using CWB check if Peterson's and Hyman's algorithm ensure ME (as expressed with several HML properties). Book: pages 146 - 151.
+
+<li> Week 13, Tuesday 15.1.08: Specifying ME in CCS. Testing mutual exclusion. Book: pages 151-159. (End of the material)
+Wednesday, 16.1.08: Beyond LTS, CCS, HM Logic (Systems with time, with probabilities, coalgebras, coalgebraic modal logic,
+coalgebraic behavioral semantics) - an overview lecture.
+
+<li> Week 14, Tuesday 22.1.08, 3pm-6pm: Exercises, Questions & Answers.
+
+<li> Week 15, Tuesday 29.1.08, 3pm-6pm: The first exam.
+
+
+</ul>
+<hr>
+<b>Results from the exam(s) and homeworks</b>
+<br>
+<TABLE width="70%">
+ <TR>
+  <TD>
+  Student ID
+  </TD>
+  <TD>
+  Exam points (<= 100)
+  </TD>
+  <TD>
+  HW points (*)(<= 11)
+  </TD>
+  <TD>
+  Project points (<= 25)
+  </TD>
+  <TD>
+  Total (mark) (**)
+  </TD>
+  <TD>
+  Exam date
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****240
+  </TD>
+  <TD>
+  96
+  </TD>
+  <TD>
+  9
+  </TD>
+  <TD>
+  25
+  </TD>
+  <TD>
+  1
+  </TD>
+  <TD>
+  29.1.8
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****949
+  </TD>
+  <TD>
+  93
+  </TD>
+  <TD>
+  7
+  </TD>
+  <TD>
+  25
+  </TD>
+  <TD>
+  1
+  </TD>
+  <TD>
+  29.1.8
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****744
+  </TD>
+  <TD>
+  90
+  </TD>
+  <TD>
+  1
+  </TD>
+  <TD>
+  20
+  </TD>
+  <TD>
+  1
+  </TD>
+  <TD>
+  29.1.8
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****112
+  </TD>
+  <TD>
+  80
+  </TD>
+  <TD>
+  11
+  </TD>
+  <TD>
+  25
+  </TD>
+  <TD>
+  1
+  </TD>
+  <TD>
+  29.1.8
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****016
+  </TD>
+  <TD>
+  75
+  </TD>
+  <TD>
+  6
+  </TD>
+  <TD>
+  25
+  </TD>
+  <TD>
+ 1
+  </TD>
+  <TD>
+  29.1.8
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****173
+  </TD>
+  <TD>
+  68
+  </TD>
+  <TD>
+  8
+  </TD>
+  <TD>
+  25
+  </TD>
+  <TD>
+  1
+  </TD>
+  <TD>
+  29.1.8
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****810
+  </TD>
+  <TD>
+  56
+  </TD>
+  <TD>
+  6
+  </TD>
+  <TD>
+  20
+  </TD>
+  <TD>
+  3
+  </TD>
+  <TD>
+  29.1.8
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****433
+  </TD>
+  <TD>
+  -
+  </TD>
+  <TD>
+  3
+  </TD>
+  <TD>
+  20
+  </TD>
+  <TD>
+  5
+  </TD>
+  <TD>
+  -
+  </TD>
+</TR>
+</TABLE>
+<hr>
+(*) There were 11 homeworks. Each delivered homework counts as one HW point.<br>
+(**) Total = Exam points + HW points + Project points. The final mark is given according to the following rules:
+1 (Total >= 100), 2  (85<= Total < 100), 3 (70 <= Total < 85), 4 (60 <= Total < 70), 5 (Total < 60)
+<br><hr>
+Exam problems from <a href="ICV-29.1.8.ps">29.1.8</a>
+</font>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-4209514-1";
+urchinTracker();
+</script>
+
+</body>
+</html>

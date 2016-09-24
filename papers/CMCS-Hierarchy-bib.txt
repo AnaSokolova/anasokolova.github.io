@@ -1,0 +1,9 @@
+@InProceedings{Hier03:cmcs,
+  author =   {F. Bartels and A. Sokolova and Vink, E.P. de},
+  title =    {A hierarchy of probabilistic system types},
+  booktitle =    {Proc.\ CMCS'03},
+  series = {ENTCS},
+  volume = {82},
+  year =     2003,
+  editor =   {H. P. Gumm},
+}

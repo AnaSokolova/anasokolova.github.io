@@ -1,0 +1,31 @@
+Response Time versus Utilization in Scheduler Overhead Accounting
+------------------------------------------------------------------
+Silviu Craciunas, Christoph Kirsch, and Ana Sokolova
+------------------------------------------------------------------
+
+Abstract:
+------------------------------------------------------------------
+
+We propose two complementary methods to account for scheduler 
+overhead in the schedulability analysis of Variable Bandwidth 
+Servers (VBS), which control process execution speed by allocating 
+variable CPU bandwidth to processes. Scheduler overhead in VBS may 
+be accounted for either by decreasing process execution speed to 
+maintain CPU utilization (called response accounting), or by 
+increasing CPU utilization to maintain process execution speed 
+(called utilization accounting). Both methods can be combined by 
+handling an arbitrary fraction of the total scheduler overhead with 
+one method and the rest with the other. Distinguishing scheduler 
+overhead due to releasing and due to suspending processes allows us 
+to further improve our analysis by accounting for releasing 
+overhead in a separate, virtual VBS process, which increases CPU 
+utilization less than through regular utilization accounting. The
+remaining overhead may then be accounted for in either more 
+increased CPU utilization, or decreased process execution speed. 
+Our method can readily be generalized to account for non-constant 
+scheduler overhead, motivated by our VBS implementation, which can
+be configured to run (with increasing space complexity) in 
+quadratic, linear, and constant time (in the number of processes). 
+Although our analysis is based on the VBS model, the general idea 
+of response and utilization accounting may also be applied to 
+other, related scheduling methods.

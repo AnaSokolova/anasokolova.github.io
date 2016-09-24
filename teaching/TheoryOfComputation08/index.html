@@ -1,0 +1,293 @@
+<html>
+
+<head>
+<title>Theory of Computation, Summer semester 2008</title>
+</head>
+
+<body text = "black" link = "7e1111" vlink = "782f2f">
+<h2> Theory of Computation, Summer semester 2008</h2>
+
+<h3> <a href="http://www.uni-salzburg.at/portal/page?_pageid=1525,1&_dad=portal&_schema=PORTAL">Department of Computer 
+Sciences</a>,  <a href="http://www.uni-salzburg.at/portal/page?_pageid=53,1&_dad=portal&_schema=PORTAL"> 
+University of Salzburg</a></h3>
+
+
+
+<b>Lecturer:</b>    &nbsp;&nbsp;&nbsp;&nbsp;   <a href="http://cs.uni-salzburg.at/~anas">Dr. A. Sokolova</a>, ana.sokolova"at"cs.uni-salzburg.at, office 2.17  
+(together with <a href="http://cs.uni-salzburg.at/~ck">Prof. C.M. Kirsch</a>)<br><br>
+
+<b>Schedule:</b>   &nbsp;&nbsp;&nbsp;&nbsp;    Tuesdays 3pm-5pm, Thursdays 2pm-3pm, T04<br><br>
+
+<b>First meeting:</b> &nbsp;&nbsp;&nbsp;  Tuesday, 4.3.2008, 3pm, T04 <br><br>
+
+
+
+<b>Language:</b>    &nbsp;&nbsp;&nbsp;&nbsp;   English <br><hr>
+
+<font color = "7e1111"><b>The course may also be taken by PhD students</b> </font><br><hr>
+
+<b>Course description: </b> We will cover elements from the theory of computation, in a detail appropriate 
+to a master course. In particular we will introduce different models of computation (in an increasing order
+ of expressivity). In short, the topics are: finite automata, regular languages, pumping lemma for regular 
+languages, context free grammars, push-down automata, cf languages, pumping lemma for cf-languages, Turing machines,
+ undecidability. Our focus will be on the expressivity of the different models of computation (classification of 
+languages, pumping lemmas) and on Turing machines as the most expressive model. To this end, we will study the 
+boundaries of computation and show undecidability results.
+<br><hr>
+
+I quote an <a href="http://www.infsec.ethz.ch/education/ss04/theoinf/">ETH-Zurich course announcement for a similair course:</a>
+<br><br>
+Why a theory of computation? Nothing is more practical than a good theory!
+<ul>
+      <li> What kind of knowledge can you acquire today that will serve for your entire career, that will still be valid in the year 2040? (Hint: concepts that have already survived half a century of CS development.)
+      <li> Theory extracts the basic concepts that apply to any conceivable implementation of computing machines. These concepts are of timeless validity, in contrast to technology-specific and product-specific know-how.
+      <li> A firm mastery of basic concepts is a great "data compression technique": many seemingly unrelated facts, presented in time-varying jargon, can be understood intuitively as instances of the same principle.
+</ul>
+(end of quote)
+<br><hr>
+
+<b>Literature: </b> 
+
+<ul>
+      <li>  <b> Introduction to the Theory of Computation </b> by 
+<a href="">Michael Sipser<a>. PWS Publishing company, 2005. The book can also be ordered
+ via <a href = "http://www.amazon.de">Amazon</a>. Several copies are available at the department library.
+
+      <li>  <b>Elements of the Theory of Computation</b>, by <a href=""> Harry R. Lewis</a> and <a href="">Christos H. Papadimitriou</a>.
+Perntice Hall, 1997. Also available
+ via <a href = "http://www.amazon.de">Amazon</a>. 
+
+      <li> Additional literature links will also be assembled here if needed, during the semester.
+
+   </ul>
+<hr>
+
+<b>Prerequisites: </b> None. Knowledge of basics of theoretical computer science is an asset. The course is somewhat complementary to the
+course "Theoretische Informatik" which mainly focuses on recursive functions as a model of computation. We will focus on automata and
+Turing machines instead. 
+
+<br><hr>
+
+<b>Exam: </b>  This is a VP course. There will be two tests during the semester, and an additional exam at the end of the semester. 
+The exam is written consisting of several excersises from the material covered during the course. Additionally, 
+there will be homeworks, which will also contribute to the final grade. <b> First text exam:</b> Tuesday <b>20.5.2008 </b> during class (3pm-5pm). 
+The material for the first test is up to PDA (without them). <b> Second text exam:</b> Thursday <b>26.6.2008</b>.
+<br><br>
+
+<b>Additional exam date(s):</b> Wednesday <b>2.7.2008</b> 1pm and Tuesday <b>8.7.2008</b> 3pm. Please notify me by email two days in advance in case you plan to attend these
+exams. 
+
+<br>
+<hr>
+
+<b>Schedule: </b> 
+
+<b> ! Note the different schedule in the first part of the semester (due to Easter break and travelling) !</b>
+
+<ul>
+
+<li>  Week 1:  Tuesday 4.3.2008, 2pm (3pm), first meeting, introduction. Thursday 6.3.2008, 2pm-4pm (<b> one hour more! </b>), finite automata, book pages 31-47.
+
+<li>  Week 2:  Tuesday 11.3.2008, <b> no class </b>. Thursday 13.3.2008, 1pm - 3pm (<b> one hour more and earlier! </b>), finite automata, nondeterminism, book pages 47-57. Homework: Fill the missing details 
+in the proof of equivalence of NFA and DFA (the induction proof that L(M) = L(N) indeed).
+
+<li> Weeks of 18.3, 25.3 and 1.4, no class (Easter break and conference), the classes for the first week of April will be held in the next three weeks, see below.
+
+<li> Week 3: Tuesday 8.4 (usual time), examples of determinization, minimizing DFA, examples, closure under 
+regular operations, book pages 57-62.  Thursday 10.4, 1pm-3pm (<b> one hour more and earlier! </b>), closure under regular
+operations, examples, regular expressions, equivalence of regular expressions and finite automata (Theorem of Kleene), 
+book pages 62-73. HW: construct a minimal DFA that recognizes (ba)*(a U b)*aab.
+
+
+<li> Week 4: Tuesday 15.4 (usual time), equivalence of regular expressions and
+finite automata (continued), examples, nonregular languages (discussion and examples), pumping lemma, book pages 73-78.
+Thursday 17.4, 1pm-3pm (<b> one hour more and earlier! </b>), pumping lemma, examples of proving non-regular languages, book pages 
+78-82. HW: Show that the language of palindroms is nonregular.
+
+
+<li> Week 5: Tuesday 22.4 (usual time), nonregularity, more examples and problems from Chapter 1, book pages
+82-99, and Thursday 24.4, 1pm-3pm (<b> one hour more and earlier! </b>) context-free languages, context-free grammars, 
+examples, book pages 99-105. HW: Design a grammar for the language L = {uavb | u, v \in {a,b}*, |u| = |v|}.
+
+<li> Week 6: Tuesday 29.4, regular languages are context-free, regular grammars, ambiguity, Chomsky 
+normal form, book pages 105-108, and Thursday 1.5. no class, holiday. HW: Think about a possible solution to
+Problem 2.29 (inherently ambiguous language).
+
+<li> Week 7: Tuesday 6.5, Chomsky normal form (example), pushdown automata, book pages 108-115, Thursday 8.5, no 
+class (next week two hours on Thursday). HW: Construct a PDA and a grammar for the language 
+{w \in {a,b}* | #b(w) = 2#a(w)}.
+
+<li> Week 8: Tuesday 13.5, no class, holiday. Thursday 15.5, 1pm-3pm (<b> one hour more and earlier! </b>), Equivalence of
+pushdown automata and context-free grammars, dicussion about the forthcoming test exam, book pages 115-123.
+
+<li> Week 9: Tuesday 20.5., exam test 1 during class. Thursday 22.5., no class, holiday.
+
+
+<li> Week 10: Tuesday 27.5., solving the exam problems, more examples. Thursday 29.5., pumping lemma for CF languages, book pages 123-127.
+HW: Show that the language {a^i b^j c^k | 0 <= i <= j <= k} is not context free.
+
+<li> Week 11: Tuesday 3.6., properties of context-free languages, deterministic push down automata for
+deterministic context-free languages. Thursday 5.6., more examples of (deterministic) push down automata
+and grammars. Book pages 127-137. HW: Construct a DPDA for the language L = {a^ib^jc^k | i+k \neq j}.
+
+<li> Week 12: Tuesday 10.6 (usual time), Turing machines, examples. Book pages 137-147. Thursday 12.6, 1pm-3pm (<b> one hour more and earlier! </b>) variants of 
+Turing machines, equivalence. Book pages 148-152. 
+HW: Construct a Turing machine that recognizes the language of palindromes of odd lenght in alphabet {0,1}.
+
+<li> Week 13: Tuesday 17.6 (usual time), Church-Turing thesis, decidable languages. Book pages: 153-172. 
+Thursday 19.6, 1pm-3pm (<b> one hour more and earlier! </b>), the halting problem. Book pages 173-186.
+
+<li> Week 14: Tuesday 24.6 (usual time), exercises, discussion, questions, examples of exam problems. Thursday 26.6, 12am-3pm (<b> two hours more and earlier! </b>) exam test 2.
+
+</ul>
+</font>
+
+
+</ul>
+<hr>
+<b>Results from the exam(s) and homeworks</b>
+<br>
+<TABLE width="70%">
+ <TR>
+  <TD>
+  Student ID
+  </TD>
+  <TD>
+  Exam test 1 points (<= 100)
+  </TD>
+  <TD>
+  Exam test 2 points (<= 100)
+  </TD>
+  <TD>
+  Full exam points (if no tests) (<= 100)
+  </TD>
+  <TD>
+  HW points
+  </TD>
+  <TD>
+  Total (mark)
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****240
+  </TD>
+  <TD>
+  78
+  </TD>
+  <TD>
+  94
+  </TD>
+  <TD>
+  -
+  </TD>
+  <TD>
+  6
+  </TD>
+  <TD>
+  1
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****178
+  </TD>
+  <TD>
+  63
+  </TD>
+  <TD>
+  89
+  </TD>
+  <TD>
+  -
+  </TD>
+  <TD>
+  5
+  </TD>
+  <TD>
+  2
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****183
+  </TD>
+  <TD>
+  57
+  </TD>
+  <TD>
+  75
+  </TD>
+  <TD>
+  -
+  </TD>
+  <TD>
+  0
+  </TD>
+  <TD>
+  3
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****173
+  </TD>
+  <TD>
+  -
+  </TD>
+  <TD>
+  -
+  </TD>
+  <TD>
+  63
+  </TD>
+  <TD>
+  4
+  </TD>
+  <TD>
+  3
+  </TD>
+</TR>
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-4209514-1";
+urchinTracker();
+</script>
+
+</body>
+</html>

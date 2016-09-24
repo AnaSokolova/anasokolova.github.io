@@ -1,0 +1,8 @@
+@INPROCEEDINGS{HasuoJS08,
+AUTHOR = "I. Hasuo and B. Jacobs and A. Sokolova",
+TITLE = "The Microcosm Principle and Concurrency in Coalgebra",
+EDITOR = "R. Amadio",
+BOOKTITLE = "FOSSACS'08",
+PUBLISHER = "LNCS~4962",
+PAGES = "246--260",
+YEAR = "2008"}

@@ -1,0 +1,8 @@
+@inproceedings{Payer08,
+    author = {Silviu S. Craciunas and Christoph M. Kirsch and Hannes Payer and Ana Sokolova and Horst Stadler and Robert Staudinger},
+    title = {A compacting real-time memory management system},
+    booktitle = {Proc. ATC},
+    year = {2008},
+    pages = {349--362},
+    publisher = {USENIX},
+}

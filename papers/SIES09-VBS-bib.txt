@@ -1,0 +1,8 @@
+@InProceedings{SIES09-VBS,
+  author = {S.S. Craciunas and C.M. Kirsch and H. Payer and H. R{\"o}ck and A. Sokolova},
+  title = {Programmable Temporal Isolation through Variable-Bandwidth Servers},
+  booktitle = {Proc. Symposium on Industrial Embedded Systems (SIES)},
+  year = {2009},
+  publisher = {IEEE},
+  pages = {171-180},
+}

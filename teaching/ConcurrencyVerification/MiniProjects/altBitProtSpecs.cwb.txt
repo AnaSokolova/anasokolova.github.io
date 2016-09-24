@@ -1,0 +1,38 @@
+****************************************************
+* The specification of a perfect sender            *
+****************************************************
+agent Spec_perfectSender0 = tau.Spec_perfectReceiver0;
+agent Spec_perfectSender1 = tau.Spec_perfectReceiver1;
+agent Spec_perfectReceiver0 = process_0.tau.Spec_perfectSender1;
+agent Spec_perfectReceiver1 = process_1.tau.Spec_perfectSender0;
+
+****************************************************
+* The specification of a lossy sender              *
+****************************************************
+agent Spec_lossySender = Spec_lossySender0 + Spec_lossySender1;
+agent Spec_lossySender0 = tau.Spec_lossyMediumS0;
+agent Spec_lossySender1 = tau.Spec_lossyMediumS1;
+agent Spec_lossyMediumS0 = tau.Spec_lossyReceiver0 + Spec_lossySender0;
+agent Spec_lossyMediumS1 = tau.Spec_lossyReceiver1 + Spec_lossySender1;
+agent Spec_lossyMediumR0 = tau.Spec_lossySender1;
+agent Spec_lossyMediumR1 = tau.Spec_lossySender0;
+agent Spec_lossyReceiver0 = process_0.tau.Spec_lossyMediumR0;
+agent Spec_lossyReceiver1 = process_1.tau.Spec_lossyMediumR1;
+
+****************************************************
+* The specification of a lossy sender.             *
+* The receiver tolerated dublications.             *
+****************************************************
+agent Spec_dublSender = Spec_dublSender0 + Spec_dublSender1;
+agent Spec_dublSender0 = tau.Spec_dublMediumS0;
+agent Spec_dublSender1 = tau.Spec_dublMediumS1;
+agent Spec_dublMediumS0 = tau.Spec_dublReceiver0 + Spec_dublSender0;
+agent Spec_dublMediumS1 = tau.Spec_dublReceiver1 + Spec_dublSender1;
+agent Spec_dublMediumR0 = tau.Spec_dublSender1 + tau.Spec_dublReceiver0';
+agent Spec_dublMediumR1 = tau.Spec_dublSender0 + tau.Spec_dublReceiver1';
+agent Spec_dublReceiver0 = process_0.Spec_dublReceiver0';
+agent Spec_dublReceiver0' = tau.Spec_dublMediumR0;
+agent Spec_dublReceiver1 = process_1.Spec_dublReceiver1';
+agent Spec_dublReceiver1' = tau.Spec_dublMediumR1;
+
+

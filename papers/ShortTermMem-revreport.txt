@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------
+Short-term Memory for Self-collecting mutators
+---------------------------------------------------------------------------
+by Martin Aigner, Andreas Haas, Christoph Kirsch, and Ana Sokolova 
+---------------------------------------------------------------------------
+
+Abstract:
+--------------------------------------------------------------------------
+We propose a new memory model for heap management, called short-term memory, and concurrent implementations of short-term memory for Java and C, called self-collecting mutators. In short-term memory objects on the heap expire after a finite amount of time, which makes deallocation unnecessary. Self-collecting mutators requires programmer support to control the progress of time and thereby enable reclaiming the memory of expired objects. We informally describe a simple translation scheme for porting existing programs to self-collecting mutators. As shown by our experimental results on several benchmarks, self-collecting mutators performs competitively with garbage-collected and explicitly managed systems. Unlike garbage-collected systems, self-collecting  mutators does not introduce pause times and provides constant execution time of all operations, independent of the number of reachable objects, and constant short-term memory consumption after a steady state has been reached. Self-collecting mutators can be linked against any unmodified C code introducing a per-object space overhead of one word and negligible runtime overhead. Short-term memory may then be used to remove explicit deallocation of some but not necessarily all objects.
+---------------------------------------------------------------------------

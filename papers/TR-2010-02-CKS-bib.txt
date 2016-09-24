@@ -1,0 +1,7 @@
+@techreport{CKS10:us,
+  author = {Craciunas, S.S. and Kirsch, C.M. and Sokolova, A.},
+  title = {Power-aware Temporal Isolation with Variable-Bandwidth Servers},
+  institution = {University of Salzburg},
+  number = {TR 2010--02},
+  year = {2010}
+}

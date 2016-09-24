@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------
+Short-term Memory for Self-collecting mutators
+---------------------------------------------------------------------------
+by Martin Aigner, Andreas Haas, Christoph Kirsch, Hannes Payer, Andreas Schoenegger, and Ana Sokolova 
+---------------------------------------------------------------------------
+
+Abstract:
+--------------------------------------------------------------------------
+We propose a new memory model, short-term memory, and an algorithm that employs it, called self-collecting mutators. In short-term memory objects expire after a certain amount of time, which makes deallocation unnecessary. Self-collecting mutators require programmer support to control the time and thereby enable reusing the memory of expired objects. We identify a class of programs for which programmer support is easy and correctness is guaranteed. We also provide support for multi-threaded applications. Self-collecting mutators perform competitively with garbage-collected systems, as shown by our experimental results on several benchmarks. Unlike garbage-collected systems, our system has no pause times, provides constant execution time of all memory operations, independent of number of live objects, and constant memory consumption after a steady state has been reached.
+---------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+@techreport{tue0106,
+  author = {Sokolova, A. and Vink, E.P. de},
+  title = {Algebraic representation of bisimulation for the tagh-format},
+  institution = {Technische Universiteit Eindhoven},
+  number = {CSR 02--02},
+  year = {2002}
+}
+

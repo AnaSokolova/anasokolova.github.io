@@ -1,0 +1,290 @@
+<html>
+
+<head>
+<title>Model Checking, Summer semester 2008/2009</title>
+</head>
+
+<body text = "black" link = "7e1111" vlink = "782f2f">
+<h2> Model Checking, Summer semester 2008/2009</h2>
+
+<h3> <a href="http://www.uni-salzburg.at/portal/page?_pageid=1525,1&_dad=portal&_schema=PORTAL">Department of Computer 
+Sciences</a>,  <a href="http://www.uni-salzburg.at/portal/page?_pageid=53,1&_dad=portal&_schema=PORTAL"> 
+University of Salzburg</a></h3>
+
+
+
+<b>Lecturer:</b>    &nbsp;&nbsp;&nbsp;&nbsp;   <a href="http://cs.uni-salzburg.at/~anas">Dr. A. Sokolova</a>, ana.sokolova"at"cs.uni-salzburg.at, office 2.17  
+(maybe sometimes <a href="http://cs.uni-salzburg.at/~ck">Prof. C.M. Kirsch</a>)<br><br>
+
+<b>Schedule (NEW as of 23.3.09):</b>   &nbsp;&nbsp;&nbsp;&nbsp;    Thursdays 10am-12am in T06 and 1pm-2pm in T04<br><br>
+
+<b>First meeting:</b> &nbsp;&nbsp;  Tuesday, 3.3.2009, 3pm, room T02 <br><br>
+
+
+
+<b>Language:</b>    &nbsp;&nbsp;&nbsp;&nbsp;   English <br><hr>
+
+<font color = "7e1111"><b>The course may also be taken by PhD students</b> </font><br><hr>
+
+<b>Course description: </b> Model checking is a technique for automatic 
+verification of finite state concurrent systems such as sequential circuit 
+designs and communication protocols. This method has advanced verification 
+from a purely theoretical to an also practically applicable discipline. Its inventors <A HREF="http://www.cs.cmu.edu/~emc/">Edmund M. Clarke</a>,
+<a href="http://www.cs.utexas.edu/~emerson/">E. Allen Emerson</a>, and
+<a href="http://www-verimag.imag.fr/~sifakis/">Joseph Sifakis</a> have 
+been awarded the significant <a href="http://awards.acm.org/homepage.cfm?awd=140">Turing award</a> in 2007.
+
+           
+
+<br><br>
+In this course we will learn the principles of model checking, namely 
+modeling with transition systems, the temporal logics LTL and CTL, their comparison, 
+as well as algorithms for verifying these logics. In addition, on 
+the practical side, we will get acquainted with the basics of the SPIN model checker, 
+one of the most commonly used model checking tools for automatic verification.
+<br><hr>
+
+<b>Literature: </b> 
+
+<ul>
+      <li>  Textbook: <a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=3730">Model Checking</a>, 
+by <a href="http://www.cs.cmu.edu/~emc/">Edmund M. Clarke</a>, <a href="http://www.cs.technion.ac.il/~orna/">Orna 
+Grumberg</a>, and <a href="http://www.dcs.warwick.ac.uk/~doron/">Doron A. Peled</a>, MIT Press, 1999.
+</ul>
+<ul>
+      <li>  Textbook: <a href ="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=11481">Principles of Model Checking</a> by 
+<a href="http://wwwtcs.inf.tu-dresden.de/~baier/Christel%20Baier.html">Christel Baier<a> and <a href="http://www-i2.informatik.rwth-aachen.de/~katoen/">Joost-Pieter Katoen</a>. MIT Press, 2008. 
+      <li>  <a href = "http://spinroot.com/spin/Doc/Book_extras/index.html">The Spin Model Checker</a>, 
+Primer and Reference Manual, by <a href="http://spinroot.com/gerard/">Gerard J. Holzmann</a>, Addison-Wesley, 2004.
+      <li>  <a href ="http://www.springer.com/computer/programming/book/978-1-84628-769-5">Principles of the 
+Spin Model Checker</a>, by <a href="http://stwww.weizmann.ac.il/G-CS/BENARI/">Mordechai Ben-Ari</a>, Springer, 2008.
+</ul>
+The books can be ordered  via <a href = "http://www.amazon.de"> Amazon.de </a>. Some copies should be available at 
+the department library in March.
+<hr>
+<b>Prerequisites: </b> None, the course material is self-contained, as is the textbook. 
+Knowledge of basics of theoretical computer science like logic for computer science or automata theory is an asset. 
+
+<br><hr>
+
+<b>Exam: </b>  This is a VP course. There will be three exam possibilities in June/July. 
+The exam is written consisting of several excersises from the material covered during the course. Additionally, 
+the homeworks and the
+mini project will also contribute to the final grade.
+(mini project = 25 points, homeworks = 11 points, exam = 100 points)
+<br><br>
+
+<b>Exam dates: </b> First possibility: Thursday 2.7.2009, 10am, T06. Second possibility: Monday 13.7.2009, 2pm, T06. 
+Third possibility: Tuesday 25.8.2009, 2pm, T06.
+
+<br><br>
+
+<b>Mini projects:</b>
+<br>
+ (1) OBDDs, Bryant's work and extensions, implementation details (theoretical mini project) - Tobias Berka
+<br>
+ (2) Model checking garbage collection with SPIN - Andreas Haas
+<br>
+ (3) Model checking a security protocol with SPIN - Stefan Jenisch and Stefan Lukesch
+<br>
+ (4) Model checking non-blocking data structures with SPIN - Andreas Schoenegger
+<br> 
+(5) Logic(s) for probabilistic model checking (theoretical mini project) - Silviu Craciunas
+<br><br>
+The deadline for completing the mini projects is 15.7.2009. Each student should submit a concise description of the project and 
+the results (up to 5 pages of text).
+
+
+<hr>
+
+<b>Schedule: </b> 
+<ul>
+ <li> Week 1, Tuesday 3.3.09: Introduction to Model Checking (Chapter 1 of
+all books), first meeting. 
+Thursday, 5.3.09: Modelling, (MC book p.12-16, PMC book p.19-26)
+ <li> Week 2, Tuesday 10.3.09: Modelling (MC book p.16-25, PMC book p.26-88), 
+Homework: Derive a formula and draw the Kripke structure for a simple
+concurrent program for mutual exclusion presented in class; read 
+about modelling of mutual exclusion in Promela/SPIN in the SPIN book (Chapter 2) 
+and try out one example in SPIN; Thursday 12.3.09: CTL* (MC book p. 27-30).
+<li> Week 3, Tuesday 17.3.09: LTL and CTL (MC book p.30-32, PMC book browse through Chapter 5 and Chapter 6).
+Homework: given in class, 2 illustrative exercises. Thursday 19.3.09 no class.
+<li> Week 4, Thursday 26.3.09 (3 hours): Fairness, Tarjan's algorithm for strongly connected components in a graph, and
+model checking CTL (MC book p. 32-37, SIAM Journal of Computing 1(2) 1972 for Tarjan's algorithm).
+<li> Week 5, Thursday 2.4.09 (3 hours): Model checking CTL (continued), examples, model checking CTL with fairness, examples,
+towards symbolic model checking (fixed points). (MC book p.37-41 and p.60-63) Homework: given in class, one
+ illustrative exercise.
+<li> Week 6, Thursday 23.4.09 (3 hours): Symbolic model checking CTL (continued), examples, OBDDs. (MC book p.64-69 
+and p.51-57) Homework: given in class, (1) an
+ illustrative exercise for symbolic model checking, and (2) prove the fixpoint characterisation of AFf.
+<li> Week 7, Thursday 30.4.09 (3 hours): OBDDs (continued), fair symbolic model checking CTL, examples, counterexamples and
+witnesses. (MC book p.57-60 
+and p.69-75) 
+<li> Week 8, Thursday 7.5.09 (3 hours): Model checking LTL, automata-based approach. (MC book p.121-127) 
+Homework: simple illustrative exercise on witnesses
+and counter examples given in class.
+<li> Week 9, Thursday 14.5.09 (3 hours): Model checking LTL, properties of Buechi automata. (MC book p.127-132) 
+<li> Week 10, Thursday 28.5.09 (3 hours): Translating LTL formulas to Buechi automata. (MC book p.132-138)
+HW: Construct automata for [pUq] and [rU[pUq]], using the translation algorithm. 
+<li> Week 11, Thursday 4.6.09 (3 hours): Model checking mu-calculus. (MC book p.97-103)
+HW: Show the duality of least and greatest fixed points (with respect to negation). 
+<li> Week 12, Thursday 18.6.09 (3 hours): Model checking mu-calculus; State space reduction via equivalences and preorders. (MC book p.103-105, 107-108, 171-176, 178-180)
+HW: Apply the model checking algorithm (both the naive one and the Emerson-Lei's one) on a simple example, given in class.
+<li> Week 13, Thursday 25.6.09 (3 hours): Discussion, Q&A, we go through an exemplaric set of exam problems/questions. 
+</ul>
+<hr>
+</font>
+
+
+</ul>
+<hr>
+<b>Results from the exam(s) and homeworks</b>
+<br>
+<TABLE width="70%">
+ <TR>
+  <TD>
+  Student ID
+  </TD>
+  <TD>
+  Exam points (<= 100)
+  </TD>
+  <TD>
+  HW points (*)(<= 11)
+  </TD>
+  <TD>
+  Project points (<= 25)
+  </TD>
+  <TD>
+  Mark (**)
+  </TD>
+  <TD>
+  Exam date
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****240
+  </TD>
+  <TD>
+  85
+  </TD>
+  <TD>
+  -
+  </TD>
+  <TD>
+  25
+  </TD>
+  <TD>
+  1
+  </TD>
+  <TD>
+  2.7.9
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****949
+  </TD>
+  <TD>
+  88
+  </TD>
+  <TD>
+  9
+  </TD>
+  <TD>
+  25
+  </TD>
+  <TD>
+  1
+  </TD>
+  <TD>
+  2.7.9
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****259
+  </TD>
+  <TD>
+  51
+  </TD>
+  <TD>
+  -
+  </TD>
+  <TD>
+  23
+  </TD>
+  <TD>
+  3
+  </TD>
+  <TD>
+  2.7.9
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****929
+  </TD>
+  <TD>
+  44
+  </TD>
+  <TD>
+  5
+  </TD>
+  <TD>
+  20
+  </TD>
+  <TD>
+  3
+  </TD>
+  <TD>
+  2.7.9
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+  ****307
+  </TD>
+  <TD>
+  31
+  </TD>
+  <TD>
+  -
+  </TD>
+  <TD>
+  23
+  </TD>
+  <TD>
+  4
+  </TD>
+  <TD>
+  25.8.9
+  </TD>
+</TR>
+
+
+</TABLE>
+<hr>
+(*) There were 11 homework tasks. Each delivered homework task counts as one HW point.<br>
+(**) Total = Exam points + HW points + Project points. The final mark is determined as follows:
+1 if Total >= 105, 2 if 85 <= Total <= 104, 3 if 65 <= Total <= 84, 4 if 50 <= Total <= 64, 5 otherwise.
+
+
+
+
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-4209514-1";
+urchinTracker();
+</script>
+
+</body>
+</html>

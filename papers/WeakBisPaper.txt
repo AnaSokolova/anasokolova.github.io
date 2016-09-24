@@ -1,0 +1,20 @@
+ 
+ Weak bisimulation for action-type coalgebras
+ ---------------------------------------------
+ 
+ Ana Sokolova, Erik de Vink and Harald Woracek
+ 
+ Abstract:
+ ---------
+
+ We propose a coalgebraic definition of weak bisimulation for a class of
+ coalgebras obtained from bifunctors in $\mathsf{Set}$. Weak bisimilarity for a
+ system is obtained as strong bisimilarity of a transformed system. The
+ transformation consists of two steps: First, the behaviour on actions is
+ expanded to behaviour on finite words. Second, the behaviour on finite
+ words is taken modulo the hiding of invisible actions, yielding behaviour
+ on equivalence classes of words closed under silent steps. The coalgebraic
+ definition is justified by two correspondence results, one for the classical
+ notion of weak bisimulation of Milner and another for the notion of weak
+ bisimulation for generative probabilistic transition systems as advocated
+ by Baier and Hermanns.

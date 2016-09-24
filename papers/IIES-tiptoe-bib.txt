@@ -1,0 +1,7 @@
+@InProceedings{IIES09,
+  author = {S.S. Craciunas and C.M. Kirsch and H. Payer and H. R{\"o}ck and A. Sokolova},
+  title = {Programmable Temporal Isolation in Real-Time and Embedded Execution Environments},
+  booktitle = {Proc. Workshop on Isolation and Integration in Embedded Systems (IIES)},
+  year = {2009},
+  publisher = {ACM},
+}

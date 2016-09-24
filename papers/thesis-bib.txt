@@ -1,0 +1,6 @@
+@PhdThesis{Sok05:thesis,
+  author =   {A. Sokolova},
+  title =    {Coalgebraic Analysis of Probabilistic Systems},
+  school =   {TU Eindhoven},
+  year =     2005
+}

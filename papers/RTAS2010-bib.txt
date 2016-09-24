@@ -1,0 +1,7 @@
+@Inproceedings{RTAS2010:VBS,
+  author = {S.C. Craciunas and C.M. Kirsch and A. Sokolova},
+  title = {Response Time versus Utilizationin Scheduler Overhead Accounting},
+  booktitle = {Proc.~RTAS},
+  publisher = {IEEE}
+  year = {2010},
+}

@@ -1,0 +1,8 @@
+@InProceedings{SVW05:entcs,
+  author =   {A. Sokolova and Vink, E.P. de and H. Woracek},
+  title =    {Weak bisimulation for action-type systems},
+  booktitle =    {Proc.\ CTCS'04},
+  pages =    {211--228},
+  year =     2005,
+  publisher =    {ENTCS~122}
+}

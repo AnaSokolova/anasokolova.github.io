@@ -1,0 +1,176 @@
+<html>
+
+<body text = "black" link = "7e1111" vlink = "782f2f">
+
+<br>
+<CENTER>
+<TABLE BORDER=0 COLS=2 WIDTH="100%" >
+<TR ALIGN=CENTER VALIGN=CENTER>
+<TD ALIGN=LEFT width=100><IMG SRC="../images/Bookshelf.gif"></TD>
+<TD ALIGN=left><h2>Ana Sokolova: Papers</h2></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<br>
+<hr>
+<br>
+
+<ul>
+<li>
+<strong> Generic Trace Theory </strong><br>
+Together with  <a href="http://www.cs.ru.nl/~ichiro/"> Ichiro Hasuo </a> and
+<a href="http://www.cs.ru.nl/B.Jacobs/"> Bart Jacobs </a> <br>
+To appear in Proceedings of CMCS'06. ENTCS. 
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="generic-traces.pdf"> Download (pdf)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="generic-traces.txt"> Abstract</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="../defense.html"> more-info</A> &nbsp&nbsp
+<br><br>
+<li>
+<strong> Coalgebraic analysis of probabilistic systems </strong><br>
+PhD thesis, september 2005, defended 3-11-2005. 
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="ThesisMain.pdf"> Download (pdf)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="thesis-bib.txt"> bibtex</A><br><br>
+<li>
+<strong> On compositions and paths for coalgebras </strong><br>
+Technical report CSR-05-26, TU Eindhoven, 2005. 23pp.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="csr-05-26.pdf"> Download (pdf)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="csr-05-26.ps"> Download (ps)</A> &nbsp&nbsp
+<br><br>
+<li>
+<strong> Weak bisimulation for action-type coalgebras </strong><br>
+Together with  <a href="http://www.win.tue.nl/~evink"> Erik de Vink </a> and
+<a href="http://osiris.tuwien.ac.at/~techmath/homepages/hworacek/home_hworacek_e.html">
+ Harald Woracek </a> <br>
+Proceedings of CTCS'04. ENTCS 122 (2005) p.211-228. 
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="WeakBisPaper.pdf"> Download (pdf)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="WeakBisPaper.txt"> Abstract</A> &nbsp&nbsp
+<br><br>
+<li>
+<strong> Weak bisimulation for action-type coalgebras </strong><br>
+Together with  <a href="http://www.win.tue.nl/~evink"> Erik de Vink </a> and 
+<a href="http://osiris.tuwien.ac.at/~techmath/homepages/hworacek/home_hworacek_e.html">
+Harald Woracek </a> <br>
+Technical report CSR-04-16, TU Eindhoven. 43pp.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="WeakBisReport.pdf"> Download (pdf)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="WeakBisReport.txt"> Abstract</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="WeakBisReport-bib.txt"> bibtex</A><br>
+Slightly extended version available on the following link (50pp).
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="WeakBisReport-ext.ps"> Download-extended (ps)</A> &nbsp&nbsp
+<br><br>
+<li>
+<strong> A hierarchy of probabilistic system types </strong><br>
+Together with <a href="http://www.nordfrost.de/fbartels/index.html"> Falk Bartels </a> and <a href="http://www.win.tue.nl/~evink"> Erik de Vink </a> <br>
+Extended
+version of  the CMCS'03 paper with the same title. 
+Theoretical Computer
+Science 327 (2004) 3-22.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="ext-Hierarchy.ps"> Download preprint (ps)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="ext-Hierarchy.txt"> Abstract</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="TCS-Hierarchy-bib.txt"> bibtex</A> &nbsp&nbsp
+<br><br>
+<li>
+<strong> Probabilistic automata: system types, parallel composition and comparison </strong><br>
+Together with <a href="http://www.win.tue.nl/~evink"> Erik de Vink </a> <br>
+Validation of Stochastic Systems. C. Baier, B. Haverkort, H. Hermanns, J.-P. Katoen and
+M. Siegle, editors. LNCS 2925 (2004) 1-43.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="dagstuhl02-prob-aut.ps"> Download preprint (ps)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="dagstuhl02-prob-aut.txt"> Abstract</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="dagstuhl02-bib.txt"> bibtex</A> &nbsp&nbsp
+<br><br>
+<li><strong> On relational properties of lumpability </strong><br>
+Together with <a href="http://www.win.tue.nl/~evink"> Erik de Vink </a> <br>
+Proceedings of the 4th PROGRESS 
+symposium on embedded systems, Utrecht, 22nd of October 2003.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="PROGRESS03-lumpability.pdf"> Download (pdf)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="PROGRESS03-lumpability.txt"> Abstract</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="PROGRESS03-lumpability-bib.txt"> bibtex</A>
+<br><br>
+<li><strong> A hierarchy of probabilistic system types </strong><br>
+Together with <a href="http://www.nordfrost.de/fbartels/index.html"> Falk Bartels </a> and <a href="http://www.win.tue.nl/~evink"> Erik de Vink </a> <br>
+Proceedings of 
+CMCS'03, ENTCS 82(1), 19pp.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="CMCS03-Hierarchy.pdf"> Download (pdf)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="CMCS03-Hierarchy.txt"> Abstract</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="CMCS03-Hierarchy-bib.txt"> bibtex</A> &nbsp&nbsp
+<br><br>
+<li><strong> Algebraic representation of bisimulation for the tagh format </strong><br>
+Together with <a href="http://www.win.tue.nl/~evink"> Erik de Vink </a> <br>
+Eindhoven 
+University of Technology, Technical Report CSR-02-02, 2002.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="csr-02-03.ps"> Download (ps)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="csr-02-02.txt"> Abstract</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="csr-02-02bib.txt"> bibtex</A> &nbsp&nbsp
+</ul>
+
+<hr>
+<h3>During the period spent at the Institute of Informatics, Skopje, Macedonia:</h3>
+
+<ul>
+<li><strong> On groupoids with identity x(xy) = y </strong><br>
+Together with Smile Markovski and Lidija Goracinova Ilieva </a> <br>
+Quasigroups and related systems 11 (2004), 39-54.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="quasigr.ps"> Download (ps)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="quasigr.txt"> Abstract</A> &nbsp&nbsp
+<br><br>
+<li><strong> On semigroups defined
+by the identity xxy = y </strong><br>
+Together with Smile Markovski and Lidija Goracinova Ilieva </a> <br>
+Public. de l'Inst. Matem. Belgrade(in print).
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="sem-xxy9.ps"> Download (ps)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="sem-xxy.txt"> Abstract</A> &nbsp&nbsp
+<br><br>
+<li><strong>Free groupoids defined by the identity  (xy)y = yx </strong><br>
+Together with Smile Markovski and Lidija Goracinova Ilieva </a> <br>
+Proc. of the 10th Cong. Yugosl. Mathem., Belgrade,
+21-24.01.2001, 173-176.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="bel5.ps"> Download (ps)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="bel.txt"> Abstract</A> &nbsp&nbsp
+<br><br>
+<li><strong> On the functional equation
+A(x, B(x,y)) = y in the variety of groupoids </strong><br>
+Together with Smile Markovski and Lidija Goracinova Ilieva</a> <br>
+A Tribute to S. B. Presic, A.
+Krapez ed., Mat. Inst., Belgrade, 2001, 84-88.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="f-eq.ps"> Download (ps)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="f-eq.txt"> Abstract</A> &nbsp&nbsp
+<br><br>
+<li><strong> Free Steiner loops </strong><br>
+Together with Smile Markovski </a> <br>
+Glasnik Matematicki Vol. 36
+(56) (2001), 85 - 93.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="fin_sl.ps"> Download (ps)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="fin-sl.txt"> Abstract</A> &nbsp&nbsp
+<br><br>
+<li><strong> Term rewriting system for solving the word
+problem for Steiner loops </strong><br>
+Together with Smile Markovski </a> <br>
+Matem. Bilt. 24 (L), Skopje 2000, 7-18.
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="wp_sl_6.ps"> Download (ps)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="wp_sl.txt"> Abstract</A> &nbsp&nbsp
+<br><br>
+<li><strong> Free basic process algebra </strong><br>
+Together with Smile Markovski </a> <br>
+Contributions to
+general algebra 11, Proc. of the Olomouc Conf. and the Summer School 1998,
+Klagenfurt (1999), 145-150
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="fr-bpa.ps"> Download (ps)</A> &nbsp&nbsp
+<IMG BORDER=0 SRC="../images/info.gif" heigth=15 width=15><A HREF="fr-bpa.txt"> Abstract</A> &nbsp&nbsp
+<br><br>
+<li><strong> Word problems </strong><br>
+Master thesis (in Macedonian), St Cyril and Methodious University, Skopje, Macedonia, 1999. </a> 
+<IMG BORDER=0 SRC="../images/archiv.gif" heigth=15 width=15><A HREF="mag_as.ps"> Download (ps)</A> &nbsp&nbsp
+
+
+
+
+<br>
+<hr>
+<br>
+
+
+<A HREF="../index.html"> <IMG SRC="../images/ltop.gif" border=0 HSPACE=10 VSPACE=5 ALIGN=TOP > back home </a> 
+
+
+</body>
+</html>

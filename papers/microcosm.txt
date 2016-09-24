@@ -1,0 +1,21 @@
+
+The Microcosm Principle and Concurrency in Coalgebra
+----------------------------------------------------
+Ichiro Hasuo, Bart Jacobs and Ana Sokolova
+----------------------------------------------------
+Abstract:
+---------------------------------------------------------------------------------------------
+Our initial question is: How to specify a parallel composition of transition systems as
+coalgebras that is guaranteed to be at least associative and compositional? The answer lies
+in recognizing algebraic structure in the base category and its compatibility with the
+coalgebra-type functor. Our results apply to both possibilistic and probabilistic systems and
+to both bisimilarity and trace semantics.
+
+Parallel composition is defined on the level of systems but it also induces parallel
+composition on states (in a final coalgebra). The two are shown to be related via the
+compositionality result. This phenomenon is an instance of what Baez and Dolan have called
+the ``microcosm principle": parallel composition is defined inside a category with parallel
+composition, just like a monoid is defined in a monoidal category. We generalize such nested
+results in two steps: to algebraic specifications (signatures with equations) and further to
+2-categorical treatment of Lawvere theories.
+----------------------------------------------------------------------------------------------

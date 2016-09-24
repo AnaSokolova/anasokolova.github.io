@@ -1,0 +1,8 @@
+@techreport{Sok05:tue,
+  author = {Sokolova, A.},
+  title = {On compositions and paths for coalgebras},
+  institution = {Technische Universiteit Eindhoven},
+  number = {CSR 05--26},
+  year = {2005}
+}
+

@@ -1,0 +1,18 @@
+
+Traces, Executions and Schedulers, Coalgebraically
+----------------------------------------------------
+Bart Jacobs and Ana Sokolova
+----------------------------------------------------
+Abstract:
+-------------------------------------------------------------------------
+A theory of traces of computations has emerged within the field of
+coalgebra, via finality in Kleisli categories. In concurrency theory,
+traces are traditionally obtained from executions, by projecting away
+states. These traces and executions are sequences and will be called
+``thin". The coalgebraic approach gives rise to both ``thin" and ``fat"
+traces/executions, where in the ``fat" case the structure of
+computations is preserved. This distinction between thin and fat will be
+introduced first. It is needed for a theory of schedulers in a
+coalgebraic setting, of which we only present the very basic definitions
+and results.
+-------------------------------------------------------------------------

@@ -1,0 +1,80 @@
+****************************************************************************
+*                          Alternating bit protocol
+****************************************************************************
+
+****************************************************************************
+* Definition of the sender
+****************************************************************************
+agent S0 = send.'sdata0.S0';
+agent S0' = timeout0.'sdata0.S0' + rack0.S1 + rack1.S0';
+agent S1 = send.'sdata1.S1';
+agent S1' = timeout1.'sdata1.S1' + rack1.S0 + rack0.S1';
+
+* The timer that may be used in parallel to trigger resends
+agent T = 'timeout0.T + 'timeout1.T;
+
+****************************************************************************
+* Definition of the receiver
+****************************************************************************
+agent R0    = rdata0.'receive.'sack0.R1 + rdata1.'sack1.R0;
+agent R1    = rdata1.'receive.'sack1.R0 + rdata0.'sack0.R1;
+
+****************************************************************************
+* Definition of a perfect channel
+****************************************************************************
+agent Cp_send = sdata0.'rdata0.Cp_send + sdata1.'rdata1.Cp_send;
+agent Cp_rec = sack0.'rack0.Cp_rec + sack1.'rack1.Cp_rec;
+agent Cperfect = (Cp_send | Cp_rec);
+
+****************************************************************************
+* Definition of a lossy channel
+****************************************************************************
+agent Cl_send = sdata0.('rdata0.Cl_send + Cl_send) + sdata1.('rdata1.Cl_send
+  + Cl_send);
+agent Cl_rec = sack0.('rack0.Cl_rec + Cl_rec) + sack1.('rack1.Cl_rec 
+  + Cl_rec);
+agent Clossy = (Cl_send | Cl_rec);
+
+****************************************************************************
+* Definition of a faulty channel
+****************************************************************************
+agent Cf_send = sdata0.Cf_send0 + sdata1.Cf_send1;
+agent Cf_send0 = 'rdata0.Cf_send0 + Cf_send;
+agent Cf_send1 = 'rdata1.Cf_send1 + Cf_send;
+agent Cf_rec = sack0.Cf_rec0 + sack1.Cf_rec1;
+agent Cf_rec0 = 'rack0.Cf_rec0 + Cf_rec;
+agent Cf_rec1 = 'rack1.Cf_rec1 + Cf_rec;
+agent Cfaulty = (Cf_send | Cf_rec);
+
+****************************************************************************
+* Internals that need to be hidden to force communication
+****************************************************************************
+set Restrictions = {sdata0, sdata1, rack0, rack1, rdata0, rdata1, sack0, 
+  sack1, timeout0, timeout1};
+
+****************************************************************************
+* Perfect implementation suffering from a deadlock, because the timer 
+* triggers resends while no packets are lost. This causes a deadlock on the 
+* proposed perfect channel
+****************************************************************************
+agent Impl_Perfect1  = (S0 | Timer | Cperfect | R0) \ Restrictions;
+
+****************************************************************************
+* Perfect implementation without timer and thus without deadlock. 
+****************************************************************************
+agent Impl_Perfect2 = (S0 | Cperfect | R0) \ Restrictions;
+
+****************************************************************************
+* Lossy implementation
+****************************************************************************
+agent Impl_Lossy = (S0 | Timer | Clossy | R0) \ Restrictions;
+
+****************************************************************************
+* Faulty implementation
+****************************************************************************
+agent Impl_Faulty = (S0 | Timer | Cfaulty | R0) \ Restrictions;
+
+****************************************************************************
+* The specification
+****************************************************************************
+agent Spec = send.'receive.Spec;

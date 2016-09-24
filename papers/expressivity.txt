@@ -1,0 +1,21 @@
+
+Exemplaric Expressivity of Modal Logics
+----------------------------------------------------
+Bart Jacobs and Ana Sokolova
+----------------------------------------------------
+Abstract:
+---------------------------------------------------------------------------------------------
+This paper investigates expressivity of modal logics for transition
+systems, multitransition systems, Markov chains, and Markov processes,
+as coalgebras of the powerset, finitely supported multiset,
+ finitely supported distribution, and measure functor, respectively.
+Expressivity means that logically indistinguishable states, satisfying
+the same formulas, are behaviourally indistinguishable. The
+investigation is based on the framework of dual adjunctions between
+spaces and logics and focuses on a crucial injectivity property. The
+approach is generic both in the choice of systems and modalities, and in
+the choice of a ``base logic''. Most of these expressivity results are
+already known, but the applicability of the uniform setting of dual
+adjunctions to these particular examples is what constitutes the
+contribution of the paper.
+----------------------------------------------------------------------------------------------

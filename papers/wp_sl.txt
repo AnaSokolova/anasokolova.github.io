@@ -1,0 +1,9 @@
+Abstract of S. Markovski, A. Sokolova
+Term rewriting system for solving the word problem for sloops
+
+The variety of Steiner loops (or sloops) consists of algebras of type
+<2,0> satisfying the laws (S1), (S2) and (S3). The word problem for the variety
+of sloops is solvable, as a consequence of a theorem of T. Evans.
+Here we use a direct approach, i.e. we define a term rewriting system that
+solves the word problem for sloops, in such a way obtaining a more
+effective algorithm than the Evans' algorithm.

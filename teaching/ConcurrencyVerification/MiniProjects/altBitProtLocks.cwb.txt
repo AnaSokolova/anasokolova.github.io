@@ -1,0 +1,19 @@
+****************************************************
+* Checking for deadlocks.                          *
+****************************************************
+prop Bx(P) = max(Z.P & [-]Z);
+
+cp(AltBitProt,Bx(<->T));
+cp(Spec_perfectSender,,Bx(<->T));
+cp(Spec_dublSender,,Bx(<->T));
+cp(Spec_lossySender,,Bx(<->T));
+
+****************************************************
+* Checking for lifelocks.                          *
+****************************************************
+prop Ev(P) = min(Z.P | ([-]Z & <->T));
+
+cp(AltBitProt,Ev(<process_0>T | <process_1>T));
+cp(Spec_perfectSender,Ev(<process_0>T | <process_1>T));
+cp(Spec_dublSender,Ev(<process_0>T | <process_1>T));
+cp(Spec_lossySender,Ev(<process_0>T | <process_1>T));

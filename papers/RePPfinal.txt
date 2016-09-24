@@ -1,0 +1,23 @@
+--------------------------------------------------------------------
+A workload-oriented programming model for temporal isolation with VBS
+--------------------------------------------------------------------
+by Silviu S. Craciunas, Christoph Kirsch, and Ana Sokolova
+--------------------------------------------------------------------
+
+Abstract:
+--------------------------------------------------------------------
+
+Workload-oriented programming is a design methodology for
+specifying throughput and latency of real-time software processes in
+temporal isolation from each other on the level of individual process 
+actions such as system or procedure calls. The key programming 
+abstraction is that the type and amount of workload involved in 
+executing a process action fully determines the action's response 
+time, independently of any previous or concurrent actions. The model 
+enables sequential and concurrent real-time process composition while 
+maintaining predictability of each action's workload-determined 
+real-time behavior. We show how the model can be implemented using 
+variable-bandwidth servers (VBS) and discuss performance-related 
+options for adequately conguring servers in the presence of non-zero 
+scheduler overhead.
+---------------------------------------------------------------------

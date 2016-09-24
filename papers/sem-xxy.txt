@@ -1,0 +1,18 @@
+Abstract S. Markovski, A. Sokolova, L.
+Goracinova Ilieva
+
+On semigroups defined by identity $xxy = y$
+
+The groupoid identity x(xy)=y appears in  definitions of several
+classes of groupoids, such as Steiner loops (which are closely related to
+Steiner triple systems),  orthogonality in quasigroups
+and others. We have considered before
+several varieties of groupoids that include this identity
+among their defining identities, and here we consider the variety
+${\mathcal V}$ of semigroups defined by the same identity. The main results
+are: the decomposition of a ${\mathcal V}$ semigroup as a direct product
+of a Boolean group and a left unit semigroup; decomposition of
+the variety ${\mathcal V}$ as a direct product of the variety of
+Boolean groups and the variety of left unit semigroups;
+constructions of free objects in ${\mathcal V}$ and the solution of the
+word problem in ${\mathcal V}$.

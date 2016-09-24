@@ -1,0 +1,7 @@
+@ARTICLE{JacobsS08,
+AUTHOR = "B. Jacobs and A. Sokolova",
+TITLE = "Exemplaric Expressivity of Modal Logics",
+JOURNAL = "Journal of Logic and Computation",
+YEAR = "2009",
+NOTE = {DOI link \verb+http://logcom.oxfordjournals.org/cgi/content/abstract/exn093v1+}
+}

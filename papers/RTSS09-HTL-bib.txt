@@ -1,0 +1,8 @@
+@Inproceedings{RTSS09:HTL,
+  author = {T.A. Henzinger and C.M. Kirsch and E.R.B. Marques and A. Sokolova},
+  title = {Distributed, Modular HTL},
+  booktitle = {Proc.~RTSS},
+  pages = {171--180},
+  publisher = {IEEE}
+  year = {2009},
+}

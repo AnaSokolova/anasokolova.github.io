@@ -1,0 +1,14 @@
+Abstract of S. Markovski, A. Sokolova
+Free Basic Process Algebra
+
+A basic process algebra is an algebra with two binary operations $+$,
+$\cdot$ and a set of constants $A$, satisfying the laws (BPA1) - (BPA5)
+as given in the text. We present a description of free basic process
+algebras by using suitable descriptions of free semigroups and free
+semilattices.
+
+The description of free basic process algebra is important since in the
+theories of process algebras, many more complex structures are built over
+the basic process algebras, and in the applications of process algebras
+one usually works with free ones.
+

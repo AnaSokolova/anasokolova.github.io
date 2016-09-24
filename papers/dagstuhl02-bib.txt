@@ -1,0 +1,9 @@
+@InProceedings{SV04:voss,
+	  author =    {A. Sokolova and Vink, E.P. de},
+	  title =     {Probabilistic automata: system types, parallel composition and comparison},
+	  booktitle = {Validation of Stochastic Systems: A Guide to Current Research},
+	  editor =    {C. Baier and B.R. Haverkort and H. Hermanns and J.-P. Katoen and M. Siegle},
+	  pages =     {1--43},
+	  year =      2004,
+	  publisher =    {LNCS 2925}
+}

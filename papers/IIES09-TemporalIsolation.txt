@@ -1,0 +1,26 @@
+--------------------------------------------------------------------
+Programmable Temporal Isolation in RealTime and Embedded Execution
+Environments
+--------------------------------------------------------------------
+by Silviu S. Craciunas, Christoph Kirsch, Hannes Payer, Harald Roeck,
+and Ana Sokolova
+--------------------------------------------------------------------
+
+Abstract:
+--------------------------------------------------------------------
+
+We begin this paper with a wish list of features that we feel a modern
+real-time and embedded execution environment should offer. We then look
+at some of the key weaknesses of conventional real-time operating
+systems (RTOS) and limitations of virtual execution environments (VEE),
+which typically offer some of the features but not all in one system. We
+propose to remedy the problem by carefully combining, in a single
+virtualized execution environment, well-known operating systems and
+virtualization techniques with an efficient real-time scheduler, which
+we have recently developed. The scheduler enables temporal isolation of
+concurrently executing processes and allows to change guaranteed process
+execution speeds efficiently at any time during execution. We also
+report on preliminary experiments with a prototypical bare-metal
+implementation.
+
+---------------------------------------------------------------------

@@ -1,0 +1,9 @@
+------------------------------------------------------------------------
+Runtime Programming through Model-Preserving, Scalable Runtime Patches
+------------------------------------------------------------------------
+by Christoph M. Kirsch, Luis Lopes, Eduardo R.B. Marques, and Ana Sokolova
+------------------------------------------------------------------------
+Abstract:
+---------
+We consider a methodology for flexible software design, runtime programming, defined by recurrent, incremental software modifications to a program at runtime, called runtime patches. The principles we consider for runtime programming are model preservation, ensuring the model in place for programs is preserved whilst allowing for runtime patches, and scalability, understanding how program compilation can appropriately scale in proportion to the change induced by a runtime patch. In accordance, a runtime patch is proposed as a model-preserving operation, working as a correct instantaneous transition between programs, and one that can be incrementally compiled for scalability. We put the formulation in perspective through a case-study instantiation over a language fordistributed hard real-time systems, the Hierarchical Timing Language (HTL).
+------------------------------------------------------------------------

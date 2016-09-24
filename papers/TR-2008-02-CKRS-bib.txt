@@ -1,0 +1,7 @@
+@techreport{CKRS08:us,
+  author = {Craciunas, S.S. and Kirsch, C.M. and R\"{o}ck, H. and Sokolova, A.},
+  title = {Real-Time Scheduling for Workload-oriented programming},
+  institution = {University of Salzburg},
+  number = {TR 2008--02},
+  year = {2008}
+}

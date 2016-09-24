@@ -1,0 +1,32 @@
+--------------------------------------------------------------------
+Programmable Temporal Isolation through Variable-Bandwidth Servers
+--------------------------------------------------------------------
+by Silviu S. Craciunas, Christoph Kirsch, Hannes Payer, Harald Roeck,
+and Ana Sokolova
+--------------------------------------------------------------------
+
+Abstract:
+--------------------------------------------------------------------
+
+We introduce variable-bandwidth servers
+(VBS) for scheduling and executing processes under programmable
+temporal isolation. A VBS is an extension
+of a constant-bandwidth server where throughput and
+latency of process execution can not only be controlled to
+remain constant across different competing workloads but
+also to vary in time as long as the resulting bandwidth
+stays below a given bandwidth cap. We have designed
+and implemented a VBS-based EDF-style constant-time
+scheduling algorithm, a constant-time admission test, and
+four alternative queue management plugins which influence
+the scheduling algorithm’s overall temporal and
+spatial complexity. Experiments confirm the theoretical
+bounds in a number of microbenchmarks and demonstrate
+that the scheduler can effectively manage in constant time
+any number of processes up to available memory while
+maintaining response times of individual processes within a
+bounded range. We have also developed a small-footprint,
+bare-metal virtual machine that uses VBS for temporal
+isolation of multiple, concurrently running processes executing
+real code.
+---------------------------------------------------------------------

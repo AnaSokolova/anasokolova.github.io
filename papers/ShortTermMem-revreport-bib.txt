@@ -1,0 +1,7 @@
+@TechReport{SBG201006,
+author = {Martin Aigner and Andreas Haas and Christoph M. Kirsch and A. Sokolova},
+title = {Short-term memory for self-collecting mutators, revised version},
+institution = {University of Salzburg},
+number = {TR 2010--06},
+year = {2010},
+}

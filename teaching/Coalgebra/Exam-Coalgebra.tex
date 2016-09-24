@@ -1,0 +1,164 @@
+\documentclass{article}
+%\usepackage{entcsmacro}
+\usepackage{graphicx}
+\usepackage{amssymb,amsmath}
+
+% The following is enclosed to allow easy detection of differences in
+% ascii coding.
+% Upper-case    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+% Lower-case    a b c d e f g h i j k l m n o p q r s t u v w x y z
+% Digits        0 1 2 3 4 5 6 7 8 9
+% Exclamation   !           Double quote "          Hash (number) #
+% Dollar        $           Percent      %          Ampersand     &
+% Acute accent  '           Left paren   (          Right paren   )
+% Asterisk      *           Plus         +          Comma         ,
+% Minus         -           Point        .          Solidus       /
+% Colon         :           Semicolon    ;          Less than     <
+% Equals        =3D           Greater than >          Question mark ?
+% At            @           Left bracket [          Backslash     \
+% Right bracket ]           Circumflex   ^          Underscore    _
+% Grave accent  `           Left brace   {          Vertical bar  |
+% Right brace   }           Tilde        ~
+
+% A couple of exemplary definitions:
+
+\newcommand{\Nat}{{\mathbb N}}
+\newcommand{\Real}{{\mathbb R}}
+\def\lastname{Hasuo, Jacobs, Sokolova}
+
+\usepackage[all,2cell,dvips,ps]{xy}
+% For faster compilation. Entries must be wrapped in curly braces!
+\CompileMatrices \xyoption{v2} \xyoption{curve} \xyoption{2cell}
+\SelectTips{cm}{}  % Tips (of arrows) are in accordance with Computer Modern
+\UseAllTwocells \SilentMatrices
+\def\labelstyle{\textstyle}
+\def\twocellstyle{\textstyle}
+
+
+\usepackage[curve]{xypic}
+
+
+\newcommand{\Sets}{\mathbf{Sets}}
+\newcommand{\setin}[3]{\{#1\in#2\;|\;#3\}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\after}{\mathrel{\circ}}
+\newcommand{\co}{\mathrel{\circ}}
+\newcommand{\NNO}{{\mathbb{N}}}
+\newcommand{\cat}[1]{{\mathbb{#1}}}
+\newcommand{\congrightarrow}{\mathrel{\stackrel{
+           \raisebox{.5ex}{$\scriptstyle\cong\,$}}{
+           \raisebox{0ex}[0ex][0ex]{$\rightarrow$}}}}
+\newcommand{\iso}{\congrightarrow}
+\newcommand{\twocl}{\Rightarrow}
+%\newcommand{\place}{\mbox{$-$}} % place holder
+\newcommand{\place}{\underline{\phantom{n}}\,} % place holder
+\newcommand{\pow}{\mathcal{P}}
+\newcommand{\dist}{\mathcal{D}}
+\newcommand{\lift}{\mathcal{L}}
+\newcommand{\dcpo}{\mathbf{DCpo}}
+\newcommand{\dcpob}{\mathbf{DCpo}_{\bot}}
+\newdir{ >}{{}*!/-8pt/@{>}}  % for mono @{ >->}
+\newcommand{\mono}{\rightarrowtail}
+\newcommand{\epi}{\twoheadrightarrow}
+\newcommand{\op}{\mathop{\mathrm{op}}\nolimits}
+\newcommand{\weg}[1]{}
+\newcommand{\defiff}{\;\stackrel{\mathrm{def}}
+      {\Longleftrightarrow}\;}
+\newcommand{\defeq}{\;\stackrel{\mathrm{def}}
+      {=}\;}
+\newcommand{\myQEDbox}{\Box}
+\newcommand{\myQED}{\hspace*{\fill}$\myQEDbox$}
+\newcommand{\st}{\mathsf{st}}
+\newcommand{\dst}{\mathsf{dst}}
+% for periods, base categories, etc.
+% e.g. #1 = -3em, #2 = 1em, #3 = \Sets
+\newcommand{\shifted}[3]{\save[]!<#1,#2>*{#3}\restore}
+\newcommand{\idmap}[1]{\textrm{id}_{#1}}
+\newcommand{\relliftop}[1]{\textrm{Rel}(#1)}
+\newcommand{\rellift}[2]{\relliftop{#1}(#2)}
+\newcommand{\Kleisli}[1]{\mathcal{K}{\kern-.2ex}\ell(#1)}
+\newcommand{\trace}[1]{\mathsf{tr}_{#1}}
+\newcommand{\toTerm}{\,\mathop{\text{\rm !}}\,}
+\newcommand{\fromInit}{\,\mathop{\text{\rm \textexclamdown}}\,}
+%\newcommand{\fromInit}{\rotatebox{180}{!}}
+
+\DeclareMathOperator{\sync}{sync}
+\DeclareMathOperator{\supp}{supp}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+
+\renewcommand{\arraystretch}{1.2}
+
+
+
+
+\newif\ifignore % when set to true, additional text appears containing
+                % further explanations or proofs (see \auxproof below)
+%\ignoretrue
+\ignorefalse
+\newcommand{\auxproof}[1]{
+\ifignore\mbox{}\newline \textbf{PROOF:} \dotfill\newline {\it
+#1}\mbox{}\newline \textbf{ENDPROOF}\dotfill \fi}
+\def\comment#1{\ifignore%
+  \marginpar[\renewcommand{\baselinestretch}{0.9}\raggedleft\sloppy{}#1]%
+    {\renewcommand{\baselinestretch}{0.9}\raggedright\sloppy{}#1}\fi}
+
+
+
+\begin{document}
+
+\title{Coalgebra for Computer Scientists\\
+  {\small{\bf{Exam, 19.7.2012}}}}
+\date{}
+
+\maketitle
+
+\vspace*{-1cm}
+
+
+\noindent{\bf{Task 1. (10 points)}}\quad 
+Let $F$ be a functor on a category $\bf C$. Show that ${\bf{CoAlg}}(F)$ is a category, the category of $F$-coalgebras and coalgebra homomorphisms.
+\vspace*{3mm}
+
+
+
+
+\noindent{\bf{Task 2. (20 points)}}\quad 
+Let $(M, +, 0)$ be a monoid. Show that the following definition provides a functor $\mathcal M$ on $\Sets$.
+On objects,
+$$\mathcal M(X) = \{ \varphi\colon X \to M \mid \supp(\varphi) \text{~is~finite~}\}$$
+where $\supp(\varphi) = \{ x \in X \mid \varphi(x) \neq 0\}$.\\
+
+\noindent On functions, for $f\colon X \to Y$, the map $\mathcal M(f) \colon \mathcal M(X) \to \mathcal M(Y)$ is given by
+$$\mathcal M (f)(\varphi) = \lambda y. \sum_{x \in f^{-1}(\{y\})} \varphi(x)$$ 
+for $\varphi \in \mathcal M(X)$.\\
+
+\noindent The functor $\mathcal M$ is called the multiset functor, in particular if the monoid is the monoid of natural numbers $(\mathbb N, + ,0)$). Why is the requirement of finite support necessary? Why does $M$ need to be a monoid? 
+
+\vspace*{3mm}
+
+\noindent{\bf{Task 3. (20 points)}}\quad 
+Let $F$ and $G$ be functors on $\Sets$. Let $\tau\colon F \Rightarrow G$ be a natural transformation, i.e., a set-indexed collection of maps $\tau_X$ for $X \in \Sets$ satisfying $\tau_Y \after Ff = Gf \after \tau_X$ for any function $f\colon X \to Y$. 
+
+\noindent Show that $T_\tau\colon {\bf CoAlg}(F) \to {\bf CoAlg}(G)$ given by
+$$T_\tau(c\colon X \to FX) = (\tau_X \after c \colon X \to GX)$$
+on objects and $T_\tau(h) = h$ 
+on morphisms, is a functor. Show that $T_\tau$ preserves bisimilarity, behavioral equivalence, and final coalgebra semantics (in case the final coalgebras exist), i.e., if $s \equiv t$ in $c\colon X \to FX$, then $s \equiv t$ in $T_\tau(c\colon X \to FX)$ as well, for each of the mentioned semantics in place of $\equiv$.
+
+\vspace*{3mm}
+
+\noindent{\bf{Task 4. (10 points)}}\quad
+Let $c\colon X \to A \times X + 1$ be a coalgebra of the sequence functor $F(-) = A \times (-) + 1$ for $A = \{a\}$ with 
+states $\{x,y\}$ and $c(x) = (a,y)$, $c(y) = *$. 
+Show that $x \not\sim y$ where $\sim$ denotes the bisimilarity equivalence on the coalgebra $c$.
+
+\vspace*{3mm}
+
+
+
+
+
+\end{document}

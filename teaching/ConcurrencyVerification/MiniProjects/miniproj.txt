@@ -1,0 +1,96 @@
+* Andreas Maier, 8920281
+*
+* Mit Jul 13 14:01:58 CEST 2011
+*
+* ICV Miniproject: Alternating Bit Protocol
+*
+*         /<- CR <-\
+* get -> S          R -> put
+*         \-> CF ->/
+*
+* S .. sender, R .. receiver, CF .. forward channel, CR .. return channel
+* 
+* Channel models:
+*   Rgood: perfect channel
+*   Rdrop: channel drops messages
+*   Rdropdup: channel drops and duplicates messages
+*
+* Remarks: Sender has timeout handling. Receiver is completely passive.
+*
+
+* Specification: deliver what you receive in a reliable manner:
+*
+agent Spec = get.'put.Spec;
+
+
+* Internal actions:
+* send0, send1: message with appended 0 or 1 from sender to forward channel.
+* rec0, rec1: message with appended 0 or 1 from forward channel to receiver.
+* sack0, sack1: acknowledgement for 0 or 1 from receiver to return channel.
+* rack0, rack1: acknowledgement for 0 or 1 from return channel to sender.
+* sto, rto, to: set and reset timer or signal timeout condition.
+* 
+set Int = {send0, send1, rack0, rack1, sto, rto, to, rec0, rec1, sack0, sack1};
+
+
+* Sender:
+*
+agent S0   = get.S0';
+agent S0'  = 'send0.'sto.S0'' + rack0.S1 + rack1.S0';
+agent S0'' = to.S0' + rack0.'rto.S1 + rack1.S0'';
+
+agent S1   = get.S1';
+agent S1'  = 'send1.'sto.S1'' + rack1.S0 + rack0.S1';
+agent S1'' = to.S1' + rack1.'rto.S0 + rack0.S1'';
+
+
+* Receiver:
+*
+agent R0 = rec0.'put.'sack0.R1 + rec1.'sack1.R0;
+agent R1 = rec1.'put.'sack1.R0 + rec0.'sack0.R1;
+
+
+* Forward channel: error free channel, dropping channel and
+*                  dropping and duplicating channel
+agent CFgood = send0.'rec0.CFgood + send1.'rec1.CFgood;
+agent CFdrop = send0.'rec0.CFdrop + send0.CFdrop + send1.'rec1.CFdrop + send1.CFdrop;
+agent CFdropdup  = send0.CFdropdup0 + send0.CFdropdup + send1.CFdropdup1 + send1.CFdropdup;
+agent CFdropdup0 = 'rec0.CFdropdup0 + 'rec0.CFdropdup;
+agent CFdropdup1 = 'rec1.CFdropdup1 + 'rec1.CFdropdup;
+
+
+* Return channel: error free channel, dropping channel and
+*                  dropping and duplicating channel
+agent CRgood = sack0.'rack0.CRgood + sack1.'rack1.CRgood;
+agent CRdrop = sack0.'rack0.CRdrop + sack0.CRdrop + sack1.'rack1.CRdrop + sack1.CRdrop;
+agent CRdropdup  = sack0.CRdropdup0 + sack0.CRdropdup + sack1.CRdropdup1 + sack1.CRdropdup;
+agent CRdropdup0 = 'rack0.CRdropdup0 + 'rack0.CRdropdup;
+agent CRdropdup1 = 'rack1.CRdropdup1 + 'rack1.CRdropdup;
+
+
+* Timeout:
+*
+agent T = sto.('to.T + rto.T);
+
+
+* Results:
+*
+agent Rgood = (S0 | R0 | CFgood | CRgood | T) \Int;
+agent Rdrop = (S0 | R0 | CFdrop | CRdrop | T) \Int;
+agent Rdropdup = (S0 | R0 | CFdropdup | CRdropdup | T) \Int;
+
+
+echo "eq(Rgood, Spec):";
+eq(Rgood, Spec);
+echo "eq(Rdrop, Spec):";
+eq(Rdrop, Spec);
+echo "eq(Rdropdup, Spec):";
+eq(Rdropdup, Spec);
+
+echo "deadlocks(Rgood):";
+deadlocks(Rgood);
+echo "deadlocks(Rdrop):";
+deadlocks(Rdrop);
+echo "deadlocks(Rdropdup):";
+deadlocks(Rdropdup);
+

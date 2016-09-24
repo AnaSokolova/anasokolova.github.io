@@ -1,0 +1,7 @@
+@techreport{MSTV07:tue,
+  author = {Markovski, J. and Sokolova, A. and Trcka, N. and Vink, E.P. de},
+  title = {Compositionality for {M}arkov Reward Chains with Fast Transitions},
+  institution = {Technische Universiteit Eindhoven},
+  number = {CS 07--17},
+  year = {2007}
+}

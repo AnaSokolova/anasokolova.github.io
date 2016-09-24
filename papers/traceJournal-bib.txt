@@ -1,0 +1,6 @@
+@ARTICLE{HasuoJS07,
+AUTHOR = "I. Hasuo and B. Jacobs and A. Sokolova",
+TITLE  = "Generic trace semantics via coinduction",
+JOURNAL = "Logical Methods in Computer Science",
+VOLUME = "3(4:11)",
+YEAR = 2007}

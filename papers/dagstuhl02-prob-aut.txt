@@ -1,0 +1,20 @@
+Ana Sokolova, Erik de Vink:
+Probabilistic automata: system types, parallel composition and comparison
+
+Abstract:
+---------
+
+
+We survey various notions of probabilistic automata and
+probabilistic bisimulation, accumulating in an expressiveness
+hierarchy of probabilistic system types. The aim of this paper is
+twofold: On the one hand it provides an overview of existing types
+of probabilistic systems and, on the other hand, it explains the
+relationship between these models. We overview probabilistic
+systems with discrete probabilities only. The expressiveness order
+used to built the hierarchy is defined via the existence of
+mappings between the corresponding system types that preserve and
+reflect bisimilarity. Additionally, we discuss parallel
+composition for the presented types of systems, augmenting the map
+of probabilistic automata with closedness under this compositional
+operator.

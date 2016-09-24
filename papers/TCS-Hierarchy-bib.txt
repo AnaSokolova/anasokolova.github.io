@@ -1,0 +1,8 @@
+@article{BSV04:tcs,
+	 author = {F. Bartels and A. Sokolova and Vink, E.P. de},
+	 title = {A hierarchy of probabilistic system types},
+	 journal = {Theoretical Computer Science},
+	 year = {2004},
+	 pages = {3--22},
+	 volume = {327}
+}

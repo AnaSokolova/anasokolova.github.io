@@ -1,0 +1,8 @@
+@article{SVW09:sacs,
+  author = {Sokolova, A. and Vink, E.P. de and Woracek, H.},
+  title = { Coalgebraic weak bisimulation for action-type systems },
+  journal = {Scientific Annals of Computer Science},
+  volume = {19},
+  pages = {93--144}
+  year = {2009}
+}

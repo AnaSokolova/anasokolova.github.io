@@ -1,0 +1,8 @@
+@InProceedings{FACS10,
+  author = {C.M. Kirsch and L. Lopes and E.R.B. Marques and A. Sokolova},
+  title = {Runtime Programming through Model-Preserving, Scalable Runtime Patches},
+  booktitle = {Proc. International Workshop on Formal Aspects of Component Software (FACS), Doctoral Track},
+  publisher = {Springer},
+  series = {LNCS},
+  year = {2010},
+}

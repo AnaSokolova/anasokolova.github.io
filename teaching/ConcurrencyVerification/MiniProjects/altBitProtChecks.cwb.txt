@@ -1,0 +1,8 @@
+****************************************************
+* Checking of weak bisimilarity between the        *
+* alternating bit protocol and the perfect, lossy, *
+* and dublicating sender specifications.           *
+****************************************************
+eq(Spec_perfectSender,AltBitProt);
+eq(Spec_lossySender,AltBitProt);
+eq(Spec_dublSender,AltBitProt);

@@ -1,0 +1,13 @@
+J. Markovski, A. Sokolova, N. Trcka, and E.P. de Vink
+
+Compositionality for Markov Reward Chains with Fast Transitions  (abstract)
+----------------------------------------------------------------------------------
+A parallel composition is defined for Markov reward chains with fast transitions 
+and for discontinuous Markov reward chains. In this setting, compositionality with 
+respect to the relevant aggregation preorders is established. For Markov reward 
+chains with fast transitions the preorders are $\tau$-lumping and $\tau-reduction.
+Discontinuous Markov reward chains are `limits' of Markov reward chains with fast 
+transitions and have related notions of lumping and reduction. In total, four
+compositionality results are shown. In addition, the two parallel operators are 
+related by a continuity property.
+

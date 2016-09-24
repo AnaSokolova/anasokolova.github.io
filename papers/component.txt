@@ -1,0 +1,17 @@
+
+Coalgebraic Components in a Many-Sorted Microcosm
+----------------------------------------------------------
+Ichiro Hasuo, Chris Heunen, Bart Jacobs, and Ana Sokolova
+----------------------------------------------------------
+Abstract:
+---------------------------------------------------------------------------------------------
+The microcosm principle, advocated by Baez and Dolan and formalized for
+Lawvere theories lately by three of the authors, has been applied to
+coalgebras in order to describe compositional behavior systematically.
+Here we further illustrate the usefulness of the approach by extending
+it to a many-sorted setting. Then we can show that the coalgebraic
+component calculi of Barbosa are examples, with compositionality of
+behavior following from microcosm structure. The algebraic structure on
+these coalgebraic components corresponds to variants of Hughes’ notion
+of arrow, introduced to organize computations in functional programming.
+----------------------------------------------------------------------------------------------

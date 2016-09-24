@@ -1,0 +1,8 @@
+@techreport{CKS09:us,
+  author = {Craciunas, S.S. and Kirsch, C.M. and Sokolova, A.},
+  title = {Response Time versus Utilization in
+Scheduler Overhead Accounting},
+  institution = {University of Salzburg},
+  number = {TR 2009--03},
+  year = {2009}
+}

@@ -1,0 +1,9 @@
+@InProceedings{HJS06:cmcs,
+author =   {I. Hasuo and B. Jacobs and A. Sokolova},
+title =    {Generic Trace Theory},
+booktitle = {CMCS 2006},
+year =  2006,
+editor =   {N. Ghani and A. J. Power},
+publisher = {ENTCS~164},
+pages =    "47--65"
+}

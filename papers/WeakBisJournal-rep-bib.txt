@@ -1,0 +1,7 @@
+@techreport{SVW09:sacs,
+  author = {Sokolova, A. and Vink, E.P. de and Woracek, H.},
+  title = { A companion to coalgebraic weak bisimulation for action-type systems },
+  institution = {Technische Universiteit Eindhoven},
+  number = {CS 07--12},
+  year = {2007}
+}

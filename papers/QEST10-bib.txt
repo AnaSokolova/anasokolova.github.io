@@ -1,0 +1,11 @@
+@InProceedings{QEST10,
+  author = {Miguel E. Andr{\'e}s and
+               Catuscia Palamidessi and
+               Peter van Rossum and
+               Ana Sokolova},
+  title = {Information hiding in probabilistic concurrent systems},
+  booktitle = {Proc.~QEST},
+  pages = {17--26},
+  publisher = {IEEE},
+  year = {2010},
+}

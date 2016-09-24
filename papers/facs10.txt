@@ -1,0 +1,9 @@
+------------------------------------------------------------------------
+Runtime Programming through Model-Preserving, Scalable Runtime Patches
+------------------------------------------------------------------------
+by Christoph M. Kirsch, Luis Lopes, Eduardo R.B. Marques, and Ana Sokolova
+------------------------------------------------------------------------
+Abstract:
+---------
+We propose a methodology for flexible software design, runtime programming, by means of incremental software modifications at runtime. Runtime programming acknowledges that software designs are often incomplete, and require the flexibility of change, e.g., fixing bugs or introducing new features, without disruption of their service. This flexibility is much needed for critical software that generally needs to handle uncertainty, e.g. cloud computing or cyber-physical systems, due to dynamic requirementsof composition, service, or performance. Runtime modifications should be allowed recurrently, and, thus, be handled as a common case of system functionality in predictable and efficient manner, with proper understanding of inherent functional and non-functional aspects. The work in many diverse research communities with related concerns typically tends to take a partial and domain-specific view of the problem, hence comprehensive and general methodologies are in order. In this extended abstract, we make a summary of the runtime programming proposal of our technical report with the same title. The work follows up on a preliminary formulation of runtime programming  and work on modular compilation of real-time programs.
+------------------------------------------------------------------------

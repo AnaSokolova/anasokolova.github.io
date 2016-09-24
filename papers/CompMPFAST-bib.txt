@@ -1,0 +1,9 @@
+@INPROCEEDINGS{MSTV07:epew,
+AUTHOR = {Markovski, J. and Sokolova, A. and Trcka, N. and Vink, E.P. de},
+TITLE = {Compositionality for {M}arkov Reward Chains with Fast Transitions},
+BOOKTITLE = {EPEW 2007},
+YEAR = {2007},
+editor = {K. Wolter},
+pages = {18--32},
+publisher = {LNCS~4748},
+}

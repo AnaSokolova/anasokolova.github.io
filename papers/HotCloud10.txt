@@ -1,0 +1,10 @@
+------------------------------------------------------------------------
+Information-Acquisition-as-a-Service for Cyber-Physical Cloud Computing
+------------------------------------------------------------------------
+by Silviu S. Craciunas,	Andreas Haas, Christoph M. Kirsch, Hannes Payer, Harald Roeck, Andreas Rottmann, Ana Sokolova, Rainer Trummer, Joshua Love, Raja Sengupta
+------------------------------------------------------------------------
+
+Abstract:
+------------------------------------------------------------------------
+Data center cloud computing distinguishes computational services such as database transactions and data storage from computational resources such as server farms and disk arrays. Cloud computing enables a software-as-a-service business model where clients may only pay for the service they really need and providers may fully utilize the resources they actually have. The key enabling technology for cloud computing is virtualization. Recent developments, including our own work on virtualization technology for embedded systems, show that service-oriented computing through virtualization may also have tremendous potential on mo- bile sensor networks where the emphasis is on information acquisition rather than computation and storage. We propose to study the notion of information-acquisition- as-a-service of mobile sensor networks, instead of server farms, for cyber-physical cloud computing. In particular, we discuss the potential capabilities and design challenges of software abstractions and systems infrastructure for performing information acquisition missions us- ing virtualized versions of aerial vehicles deployed on a fleet of high-performance model helicopters.
+------------------------------------------------------------------------

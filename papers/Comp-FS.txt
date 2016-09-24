@@ -1,0 +1,25 @@
+---------------------------------------------------------------------
+Compositionality for Markov Reward Chains 
+with Fast and Silent Transitions
+---------------------------------------------------------------------
+by Jasen Markovski, Ana Sokolova, Nikola Trcka, and Erik de Vink
+---------------------------------------------------------------------
+
+Abstract:
+---------------------------------------------------------------------
+A parallel composition is defined for Markov reward chains with
+stochastic discontinuity, fast,  and silent transitions. In 
+this setting, compositionality with respect to the relevant 
+aggregation preorders is established.
+
+For Markov reward chains with fast transitions the preorders are
+$\tau$-lumping and $\tau$-reduction. Discontinuous Markov reward
+chains are `limits' of Markov reward chains with fast transitions,
+and have related notions of lumping and reduction. Markov reward
+chains with silent transitions are equivalence classes of Markov
+reward chains with fast transitions and are equipped with the lifted
+preorders $\tau_\sim$-lumping and $\tau_\sim$-reduction.  In total,
+six compositionality results are presented. Additionally, the
+parallel operators are related by a continuity result.
+----------------------------------------------------------------------
+

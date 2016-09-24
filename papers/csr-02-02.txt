@@ -1,0 +1,14 @@
+Abstract A. Sokolova and E.P. de Vink
+Algebraic representation of bisimulation for the tagh-format
+Technical Report CSR 02-02, Technische Universiteit Eindhoven, 2002
+
+Process behavior is often described in terms of structural
+operational semantics. For a wide class of such rules, viz. those
+adhering to the GSOS format or to the tagh-format, it is possible
+to obtain automatically a finite axiomatization that characterizes
+strong bisimulation. Here we go a bit further and show for this
+format how to obtain canonical representatives of bisimulation
+equivalence classes under a condition of well-foundedness. This we
+do by constructing the initial algebra in the variety of
+semi-lattices over the axiomatization of a system.
+

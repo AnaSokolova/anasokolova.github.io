@@ -1,0 +1,14 @@
+Ana Sokolova and Erik de Vink:
+On relational properties of lumpability
+
+Abstract:
+----------
+
+The technique of lumping of Markov chains is one of the main tools
+for recovering from state explosion in the quantitative analysis of
+large probabilistic systems. Useful results regarding relational
+properties of general, ordinary and exact lumpability, in particular
+transitivity and strict confluence, are rather scattered or implicit in the
+literature. These are collected and reformulated here from a
+process-theoretic point of view. Additionally, counterexamples are
+provided that complete the picture.

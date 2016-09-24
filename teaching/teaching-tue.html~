@@ -1,0 +1,38 @@
+<html>
+
+<body text = "black" link = "7e1111" vlink = "782f2f">
+
+<br>
+<CENTER>
+<TABLE BORDER=0 COLS=2 WIDTH="100%" >
+<TR ALIGN=CENTER VALIGN=CENTER>
+<TD ALIGN=LEFT width=100><IMG SRC="../images/note.gif"></TD>
+<TD ALIGN=left><h3>Ana Sokolova: Teaching at TU/E</h3></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<br>
+<hr>
+<br>
+
+
+
+
+<BR> <IMG SRC="../images/ltm.gif" border=0 HSPACE=10 VSPACE=5 ALIGN=TOP >Winter 2003/04 <A HREF="ProcessAlgebra/pa/index.html">
+	Process Algebra</a> (2M920) instructions with <a href= "http://www.win.tue.nl/~luttik/">Bas Luttik<a>, lectures by <a href="http://www.win.tue.nl/~josb/">Jos Baeten<a><br>
+<BR> <IMG SRC="../images/ltm.gif" border=0 HSPACE=10 VSPACE=5 ALIGN=TOP > Fall 2002 <A HREF="ProcessAlgebra/pa02/index.html"> 
+	PA (2M920) 2002</a>  instructions with <a href= "http://www.win.tue.nl/~sidorova/">Natalia Sidorova<a>, lectures by <a href="http://www.win.tue.nl/~josb/">Jos Baeten<a><br>
+<br>
+<hr>
+<br>
+<A HREF="../index.html"> <IMG SRC="../images/ltop.gif" border=0 HSPACE=10 VSPACE=5 ALIGN=TOP > back home </a> 
+
+<CENTER>
+<MAP NAME="home">
+<AREA COORDS="0,0,100,100" HREF="../index.html">
+</MAP>back <IMG USEMAP="#home" SRC="../images/Beer.gif" HEIGHT=40 WIDTH=40 border=0> home
+</CENTER>
+
+</body>
+</html>

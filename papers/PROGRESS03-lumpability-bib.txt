@@ -1,0 +1,7 @@
+@InProceedings{Lump03:progress,
+  author =   {A. Sokolova and Vink, E.P. de},
+  title =    {On relational properties of lumpability},
+  booktitle =    {Proceedings of the 4th PROGRESS 
+		symposium on embedded systems, Utrecht, October 2003},
+  year =     2003,
+}

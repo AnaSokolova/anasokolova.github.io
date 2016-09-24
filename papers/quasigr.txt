@@ -1,0 +1,15 @@
+On groupoids with identity x(xy) = y
+--------------------------------------
+
+Lidija Goracinova-Ilieva, Smile markovski, Ana Sokolova
+
+Abstract:
+--------
+
+The groupoid identity x(xy) = y appears in defining several classses of groupoids, such as Steiner's
+loops which are closely related to Steiner's triple systems, the class of cancellative groupoids
+with property (2,5), Boolean groups, and groupoids that exhibit orthogonality of quasigroups.
+Its dual identity is one of the defining identities for the variety of quasigroups corresponding to strongly
+2-perfect m-cycle systems. In this paper we consider several varieties of groupoids defined, among others by the
+mentioned identity. Canonical constructions of free objects in each of these varieties are given and
+several other structural properties are presented.

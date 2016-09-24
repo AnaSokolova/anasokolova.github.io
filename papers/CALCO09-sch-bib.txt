@@ -1,0 +1,8 @@
+@InProceedings{CALCO09-sched,
+  author = {B. Jacobs and A. Sokolova},
+  title = {Traces, executions and schedulers, coalgebraically },
+  booktitle = {Proc. CALCO},
+  year = {2009},
+  publisher = {LNCS~5728},
+  pages = {206--221}
+}

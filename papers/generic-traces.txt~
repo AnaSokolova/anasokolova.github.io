@@ -1,0 +1,10 @@
+ 
+ Weak bisimulation for action-type coalgebras
+ ---------------------------------------------
+ 
+ Ichiro Hasuo, Bart Jacobs and Ana Sokolova
+ 
+ Abstract:
+ ---------
+
+ "Trace semantics" has been defined for various non-deterministic systems with different input/output types, or with different types of "non-determinism" such as classical non-determinism (with a set of possible choices) vs. probabilistic non-determinism. In this paper we claim that those various forms of "trace semantics" are instances of a single categorical construction, namely coinduction in a Kleisli category. This claim is based on our min technical result that an initial algebra in the category of sets and functions yields a final coalgebra in the Kleisli category, for monads with suitable order structure. The proof relies on coincidence of limits and colimits, like in the work of Smyth and Plotkin.

@@ -1,0 +1,9 @@
+@ARTICLE{MarSokTrcVinPEVA09,
+AUTHOR = {Markovski, J. and Sokolova, A.and Trcka, N. and Vink, E.P. de},
+TITLE = {Compositionality for Markov reward chains with fast and silent transitions},
+JOURNAL = {Peformance Evaluation},
+YEAR = {2009},
+volume = {66},
+number = {8},
+pages = {435--452}
+}

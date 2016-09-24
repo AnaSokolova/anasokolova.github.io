@@ -1,0 +1,56 @@
+****************************************************
+* The sender either sends a 0 or a 1 and has       *
+* a timeout or receivesthe ACK from the receiver   *
+****************************************************
+agent S_0 = ('send_0.(timeout.S_0 + transmack_0.S_1)); 
+agent S_1 = ('send_1.(timeout.S_1 + transmack_1.S_0)); 
+
+agent S = S_0 + S_1;
+
+****************************************************
+* The timer sends out periodic timeout signals     *
+****************************************************
+agent Timer = 'timeout.Timer;
+
+****************************************************
+* The sender and receiver communicate through a    *
+* channel with respective interfaces for the       *
+* sender as well as for the receiver               *
+****************************************************
+agent Interface_S = send_0.('transm_0.Interface_S + Interface_S) 
+                  + send_1.('transm_1.Interface_S + Interface_S);
+agent Interface_R = sendack_0.('transmack_0.Interface_R + Interface_R) 
+                  + sendack_1.('transmack_1.Interface_R + Interface_R);
+agent Channel = (Interface_S | Interface_R);
+
+****************************************************
+* The receiver processes the message when he       *
+* receives a certain control bit (0 or 1) for the  *
+* first time. Then it sends an ACK to the          *
+* interface. Subsequently received messages with   *
+* the same control bit are just acknowledged.      *
+****************************************************
+agent R_0 = (transm_0.R_0_process);
+agent R_0_process = process_0.R_0_ack;
+agent R_0_ack = 'sendack_0.(transm_0.R_0_ack + transm_1.R_1_process);
+
+agent R_1 = (transm_1.R_1_process);
+agent R_1_process = process_1.R_1_ack;
+agent R_1_ack = 'sendack_1.(transm_1.R_1_ack + transm_0.R_0_process);
+
+agent R = (R_0 + R_1);
+
+****************************************************
+* The Alternating Bit Protocol sets the sender,    *
+* receiver and channel in parallel to allow for    *
+* communication. We restrict the communicating     *
+* ports (send_[01], transm_[01], sendack_[01],     *
+* transmack_[01], timeout) of the processes to be  *
+* only used in the Alternating Bit Protocol.       *
+****************************************************
+set Res = {send_0,send_1,transm_0,transm_1, sendack_0, 
+           sendack_1, transmack_0, transmack_1, timeout};
+agent AltBitProt = (S | Timer | R | Channel)\Res;
+
+
+

@@ -1,0 +1,7 @@
+@InProceedings{RTAS10,
+  author = {S.S. Craciunas and C.M. Kirsch and A. Sokolova},
+  title = {Response Time versus Utilization in Scheduler Overhead Accounting},
+  booktitle = {Proc. Real-Time and Embedded Technology and Applications Symposium (RTAS)},
+  year = {2010},
+  publisher = {IEEE}
+}

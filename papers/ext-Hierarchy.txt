@@ -1,0 +1,24 @@
+Falk Bartels, Ana Sokolova and Erik de Vink:
+A hierarchy of probabilistic system types
+
+Abstract:
+----------
+
+We arrange various classes of probabilistic systems studied in the
+literature in an expressiveness hierarchy. Our expressiveness
+criterion is the existence of a system translation, from the less
+expressive type into the more expressive type, that preserves and
+reflects probabilistic bisimilarity. We model the different system
+types as coalgebras of suitable behavior functors and argue that
+the corresponding coalgebraic bisimilarity coincides with
+probabilistic bisimilarity for the classes for which the latter
+notion has been proposed in the literature. The theory of
+coalgebras provides a unified framework for the presentation of
+the different classes and the system translations we needed to
+establish the hierarchy. All these translations arise in a
+standard way from natural transformations between the two behavior
+functors involved. Such a translation generally preserves
+coalgebraic bisimilarity. We exploit a new result that, under mild
+assumptions on the behavior functors, a system translation induced
+by a natural transformation with injective components also
+reflects bisimilarity.

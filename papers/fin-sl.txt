@@ -1,0 +1,18 @@
+Abstract of S. Markovski, A. Sokolova
+Free Steiner Loops
+
+A Steiner loop, or a sloop, is a groupoid $(L;\cdot,1)$, where
+$\cdot$ is a binary operation and 1 is a constant, satisfying  the
+laws  (S1), (S2) and (S3). There is a one-to-one
+correspondence between Steiner triple systems  and finite sloops.
+
+Two constructions of free objects in the variety of sloops are presented in
+this paper. They both allow recursive construction of a free
+sloop with a free base $X$, provided that $X$ is recursively defined set.
+The main results besides the constructions, are: Each subsloop of a free
+sloop is free too. A free sloop ${\mathbf S}$ with a free finite base $X,\
+|X|\geq3$, has a free subsloop with a free base of any finite cardinality
+and a free subsloop with a free base of cardinality $\omega$ as well; also
+${\mathbf S}$ has a (non free) base of any finite cardinality $k \ge |X|$.
+We also show that the word problem for the variety of sloops is solvable,
+due to embedding property.

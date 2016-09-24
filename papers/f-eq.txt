@@ -1,0 +1,10 @@
+Abstract of S. Markovski, A. Sokolova, L. Goracinova Ilieva
+On the functional equation $A(x, B(x,y)) = y$ in the variety of
+groupoids
+
+In this paper we focus on finding general solutions of the functional
+equation $A(x,B(x,y))=y$ in the class of groupoids where $A,\ B$ are unknown
+groupoid operations over the same set. We also consider
+functional equations symmetric to the mentioned one, as well as systems of
+such functional equations.
+

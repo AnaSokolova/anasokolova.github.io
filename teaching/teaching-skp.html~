@@ -1,0 +1,39 @@
+<html>
+
+<body text = "black" link = "7e1111" vlink = "782f2f">
+
+<br>
+<CENTER>
+<TABLE BORDER=0 COLS=2 WIDTH="100%" >
+<TR ALIGN=CENTER VALIGN=CENTER>
+<TD ALIGN=LEFT width=100><IMG SRC="../images/note.gif"></TD>
+<TD ALIGN=left><h3>Ana Sokolova: Teaching at II, PMF, Skopje</h3></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<br>
+<hr>
+<br>
+From 1995 till 2001, I was developing and giving instructions in the following courses at the <a href="http://www.ii.pmf.ukim.edu.mk"> Institute of Informatics </a>, <a href="http://www.pmf.ukim.edu.mk">
+Faculty of Natural Sciences and Mathematics</a> in Skopje:
+<ul>
+<li><strong> Introduction to Computer Science </strong> for students of the departments of Biology, Chemistry and Geography
+<li> <strong> Introduction to Computer Science </strong> (Pascal programming) for first year Computer Science students
+<li> <strong> Data bases </strong> for 6th semestet Computer Science students
+<li> <strong> Sets and logic </strong> for 1st semester Computer Science students
+<li> <strong> Algebra 1 </strong> for 4th semester Mathematics students
+<li> <strong> Algebra 2 </strong> for third year Mathematics students
+<li> <strong> Mathematical Logic and Algebra </strong> for second year Computer Science students
+<li> <strong> Algebraic discrete structures </strong> for third year  Computer Science students
+<li> <strong> Algorithms and automata </strong> for 8th semester  Computer Science students
+</ul>
+<br>
+<hr>
+<br>
+<A HREF="../index.html"> <IMG SRC="../images/ltop.gif" border=0 HSPACE=10 VSPACE=5 ALIGN=TOP > back home </a> 
+
+
+
+</body>
+</html>

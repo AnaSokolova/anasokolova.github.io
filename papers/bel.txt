@@ -1,0 +1,12 @@
+Abstract of S. markovski, L. Goracinova Ilieva, A. Sokolova
+Free groupoids with the identity $(xy)y = yx$
+
+A construction of free groupoids in the variety $\mathcal{V}$ defined by
+Stein identity $(xy)y=yx$ is given. The construction is
+canonical i.e. the free groupoid is constructed with universe a subset of
+the absolutely free groupoid and suitably defined operation. In fact a
+countable closed set of identities that are consequences of the defining one
+is obtained.
+
+
+

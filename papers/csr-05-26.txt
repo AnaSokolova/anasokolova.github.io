@@ -1,0 +1,13 @@
+On compositions and paths for coalgebras
+-----------------------------------------
+
+Ana Sokolova
+
+Abstract:
+---------
+
+This report discusses the possibility of defining composed steps and
+paths in coalgebras. Both of these notions are relevant for defining some
+semantic relations for coalgebras like weak bisimulation and trace semantics.
+We present some observations, ideas, and small results on the mentioned
+topics
