@@ -411,6 +411,16 @@
     opacity: 1.00;
 }
 .style_14 {
+    color: rgb(0, 0, 0);
+    font-family: 'Verdana-Bold', 'Verdana', sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    opacity: 1.00;
+}
+.style_15 {
     font-family: 'Verdana', sans-serif;
     font-size: 13px;
     font-stretch: normal;
@@ -480,10 +490,10 @@
 .graphic_textbox_layout_style_default_External_890_283 {
     position: relative;
 }
-.graphic_textbox_layout_style_default_External_900_119 {
+.graphic_textbox_layout_style_default_External_100_41 {
     position: relative;
 }
-.graphic_textbox_layout_style_default_External_100_41 {
+.graphic_textbox_layout_style_default_External_900_119 {
     position: relative;
 }
 .graphic_textbox_layout_style_default_External_899_60 {
