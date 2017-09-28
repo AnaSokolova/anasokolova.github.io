@@ -296,12 +296,6 @@
 .style_5 {
     line-height: 16px;
 }
-.style_6 {
-    color: rgb(0, 0, 0);
-    line-height: 16px;
-    opacity: 1.00;
-    text-decoration: none;
-}
 .style_SkipStroke {
     background: transparent;
     opacity: 1.00;
@@ -309,6 +303,12 @@
 .style_SkipStroke_1 {
     background: transparent;
     opacity: 1.00;
+}
+.style_6 {
+    color: rgb(0, 0, 0);
+    line-height: 16px;
+    opacity: 1.00;
+    text-decoration: none;
 }
 .paragraph_style_12 {
     color: rgb(0, 0, 0);
@@ -445,6 +445,9 @@
 .graphic_textbox_layout_style_default {
     padding: 4px;
 }
+.graphic_textbox_layout_style_default_External_592_177 {
+    position: relative;
+}
 .graphic_textbox_layout_style_default_External_253_207 {
     position: relative;
 }
@@ -466,16 +469,13 @@
 .graphic_textbox_layout_style_default_External_899_158 {
     position: relative;
 }
-.graphic_textbox_layout_style_default_External_671_368 {
-    position: relative;
-}
 .graphic_textbox_layout_style_default_External_270_207 {
     position: relative;
 }
 .graphic_textbox_layout_style_default_External_899_98 {
     position: relative;
 }
-.graphic_textbox_layout_style_default_External_592_136 {
+.graphic_textbox_layout_style_default_External_671_384 {
     position: relative;
 }
 .graphic_textbox_style_default_SkipStroke {
