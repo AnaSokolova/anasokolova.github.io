@@ -362,6 +362,16 @@
     line-height: 16px;
     opacity: 1.00;
 }
+.style_13 {
+    color: rgb(0, 0, 0);
+    font-family: 'Verdana-Bold', 'Verdana', sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    opacity: 1.00;
+}
 .paragraph_style_12 {
     color: rgb(0, 0, 0);
     font-family: 'Times-Roman', 'Times', 'Times New Roman', serif;
@@ -384,7 +394,7 @@
     text-indent: 0px;
     text-transform: none;
 }
-.style_13 {
+.style_14 {
     font-family: 'Verdana-Bold', 'Verdana', sans-serif;
     font-size: 13px;
     font-stretch: normal;
@@ -436,7 +446,7 @@
     text-indent: 0px;
     text-transform: none;
 }
-.style_14 {
+.style_15 {
     line-height: 17px;
     text-decoration: none;
 }
