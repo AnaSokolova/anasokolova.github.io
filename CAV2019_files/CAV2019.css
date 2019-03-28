@@ -420,6 +420,9 @@
     font-weight: 400;
     line-height: 16px;
 }
+.style_12 {
+    line-height: 16px;
+}
 .paragraph_style_15 {
     color: rgb(0, 0, 0);
     font-family: 'Verdana-Bold', 'Verdana', sans-serif;
@@ -464,7 +467,7 @@
     text-indent: 0px;
     text-transform: none;
 }
-.style_12 {
+.style_13 {
     line-height: 17px;
     text-decoration: none;
 }
