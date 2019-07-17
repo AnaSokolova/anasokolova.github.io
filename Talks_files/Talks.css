@@ -107,12 +107,12 @@
 }
 .paragraph_style_4 {
     color: rgb(0, 0, 0);
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Verdana-Bold', 'Verdana', sans-serif;
     font-size: 13px;
     font-stretch: normal;
     font-style: normal;
     font-variant: normal;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 0;
     line-height: 16px;
     margin-bottom: 0px;
@@ -426,7 +426,7 @@
 .graphic_textbox_layout_style_default {
     padding: 4px;
 }
-.graphic_textbox_layout_style_default_External_909_3465 {
+.graphic_textbox_layout_style_default_External_909_3617 {
     position: relative;
 }
 .graphic_textbox_layout_style_default_External_253_207 {
