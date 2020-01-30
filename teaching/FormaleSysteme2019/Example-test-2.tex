@@ -1,0 +1,164 @@
+\documentclass{article}
+%\usepackage{entcsmacro}
+\usepackage{graphicx}
+\usepackage{amssymb,amsmath}
+
+% The following is enclosed to allow easy detection of differences in
+% ascii coding.
+% Upper-case    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+% Lower-case    a b c d e f g h i j k l m n o p q r s t u v w x y z
+% Digits        0 1 2 3 4 5 6 7 8 9
+% Exclamation   !           Double quote "          Hash (number) #
+% Dollar        $           Percent      %          Ampersand     &
+% Acute accent  '           Left paren   (          Right paren   )
+% Asterisk      *           Plus         +          Comma         ,
+% Minus         -           Point        .          Solidus       /
+% Colon         :           Semicolon    ;          Less than     <
+% Equals        =3D           Greater than >          Question mark ?
+% At            @           Left bracket [          Backslash     \
+% Right bracket ]           Circumflex   ^          Underscore    _
+% Grave accent  `           Left brace   {          Vertical bar  |
+% Right brace   }           Tilde        ~
+
+% A couple of exemplary definitions:
+
+\newcommand{\Nat}{{\mathbb N}}
+\newcommand{\Real}{{\mathbb R}}
+\def\lastname{Hasuo, Jacobs, Sokolova}
+
+\usepackage[all,2cell,dvips,ps]{xy}
+% For faster compilation. Entries must be wrapped in curly braces!
+\CompileMatrices \xyoption{v2} \xyoption{curve} \xyoption{2cell}
+\SelectTips{cm}{}  % Tips (of arrows) are in accordance with Computer Modern
+\UseAllTwocells \SilentMatrices
+\def\labelstyle{\textstyle}
+\def\twocellstyle{\textstyle}
+
+
+\usepackage[curve]{xypic}
+
+
+\newcommand{\Sets}{\mathbf{Sets}}
+\newcommand{\setin}[3]{\{#1\in#2\;|\;#3\}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\after}{\mathrel{\circ}}
+\newcommand{\co}{\mathrel{\circ}}
+\newcommand{\NNO}{{\mathbb{N}}}
+\newcommand{\cat}[1]{{\mathbb{#1}}}
+\newcommand{\congrightarrow}{\mathrel{\stackrel{
+           \raisebox{.5ex}{$\scriptstyle\cong\,$}}{
+           \raisebox{0ex}[0ex][0ex]{$\rightarrow$}}}}
+\newcommand{\iso}{\congrightarrow}
+\newcommand{\twocl}{\Rightarrow}
+%\newcommand{\place}{\mbox{$-$}} % place holder
+\newcommand{\place}{\underline{\phantom{n}}\,} % place holder
+\newcommand{\pow}{\mathcal{P}}
+\newcommand{\dist}{\mathcal{D}}
+\newcommand{\lift}{\mathcal{L}}
+\newcommand{\dcpo}{\mathbf{DCpo}}
+\newcommand{\dcpob}{\mathbf{DCpo}_{\bot}}
+\newdir{ >}{{}*!/-8pt/@{>}}  % for mono @{ >->}
+\newcommand{\mono}{\rightarrowtail}
+\newcommand{\epi}{\twoheadrightarrow}
+\newcommand{\op}{\mathop{\mathrm{op}}\nolimits}
+\newcommand{\weg}[1]{}
+\newcommand{\defiff}{\;\stackrel{\mathrm{def}}
+      {\Longleftrightarrow}\;}
+\newcommand{\defeq}{\;\stackrel{\mathrm{def}}
+      {=}\;}
+\newcommand{\myQEDbox}{\Box}
+\newcommand{\myQED}{\hspace*{\fill}$\myQEDbox$}
+\newcommand{\st}{\mathsf{st}}
+\newcommand{\dst}{\mathsf{dst}}
+% for periods, base categories, etc.
+% e.g. #1 = -3em, #2 = 1em, #3 = \Sets
+\newcommand{\shifted}[3]{\save[]!<#1,#2>*{#3}\restore}
+\newcommand{\idmap}[1]{\textrm{id}_{#1}}
+\newcommand{\relliftop}[1]{\textrm{Rel}(#1)}
+\newcommand{\rellift}[2]{\relliftop{#1}(#2)}
+\newcommand{\Kleisli}[1]{\mathcal{K}{\kern-.2ex}\ell(#1)}
+\newcommand{\trace}[1]{\mathsf{tr}_{#1}}
+\newcommand{\toTerm}{\,\mathop{\text{\rm !}}\,}
+\newcommand{\fromInit}{\,\mathop{\text{\rm \textexclamdown}}\,}
+%\newcommand{\fromInit}{\rotatebox{180}{!}}
+
+\DeclareMathOperator{\sync}{sync}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+
+\renewcommand{\arraystretch}{1.2}
+
+
+
+
+\newif\ifignore % when set to true, additional text appears containing
+                % further explanations or proofs (see \auxproof below)
+%\ignoretrue
+\ignorefalse
+\newcommand{\auxproof}[1]{
+\ifignore\mbox{}\newline \textbf{PROOF:} \dotfill\newline {\it
+#1}\mbox{}\newline \textbf{ENDPROOF}\dotfill \fi}
+\def\comment#1{\ifignore%
+  \marginpar[\renewcommand{\baselinestretch}{0.9}\raggedleft\sloppy{}#1]%
+    {\renewcommand{\baselinestretch}{0.9}\raggedright\sloppy{}#1}\fi}
+
+
+
+\begin{document}
+
+\title{Formale Systeme\\
+ \small{{\bf{Example test 2, tasks to be discussed on January 30, 2020 }}} }
+\date{}
+
+\maketitle
+\thispagestyle{empty}
+
+
+
+\noindent{\bf{Task 1.}} (20 points) \quad Define the following notions:
+\begin{itemize}
+	\item[(a)] A relation $R$ is symmetric.
+	\item[(b)] A relation $R$ is a total order.
+	\item[(c)] A function $f$ is surjective.
+	\item[(d)] $|A| = |B|$ for two sets $A$ and $B$.
+\end{itemize}
+
+\vspace*{5mm}
+
+\noindent{\bf{Task 2.}} (20 points) \quad
+Consider the relation $R$ on $\mathcal{P}(X)$ for a set $X$, defined by
+$$(A,B) \in R \qquad \Leftrightarrow \qquad A \cup B \subseteq A .$$
+Prove that $R$ is a transitive relation.\\
+
+\noindent Hint: Maybe it helps if you reformulate the definition of $R$ using set properties.
+
+\vspace*{5mm}
+
+
+\noindent{\bf{Task 3.}} (20 points) \quad
+Prove that the composition of two injective functions is an injective function, i.e., prove that if 
+$f\colon A \to B$ and $g\colon B  \to C$ are both injective, then also $g \after f \colon A \to C$ is injective.
+
+
+\vspace*{5mm}
+
+\noindent{\bf{Task 4.}} (20 points) \quad
+Let $B$ be an ordered set with partial order $\le$ on it.
+Consider the set of all functions $$F_{A,B} = \{ f \mid f \colon A \to B \}.$$
+We define a relation $\sqsubseteq$ on $F_{A,B}$ by (for $f, g \in F_{A,B}$):
+
+$$ f \sqsubseteq g \qquad \Leftrightarrow \qquad \forall a \in A.\, f(a) \le g(a).$$  
+
+Prove that $\sqsubseteq$ is a partial order too.
+
+\vspace*{5mm}
+
+
+\noindent{\bf{Task 5.}} (20 points) \quad
+Construct a DFA for the language given by the regular expression 
+$$(ab)^*(a \cup b)^*(baa^*)(abb^*).$$
+Hint: It might be helpful if you first show that $(ab)^*(a \cup b)^* = (a \cup b)^*$.
+
+\end{document}
