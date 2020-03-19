@@ -316,6 +316,16 @@
     text-indent: 0px;
     text-transform: none;
 }
+.style_14 {
+    color: rgb(161, 65, 103);
+    font-family: 'Verdana', sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    opacity: 1.00;
+}
 .paragraph_style_9 {
     color: rgb(0, 0, 0);
     font-family: 'Verdana', sans-serif;
@@ -382,7 +392,7 @@
     text-indent: 0px;
     text-transform: none;
 }
-.style_14 {
+.style_15 {
     line-height: 17px;
     text-decoration: none;
 }
