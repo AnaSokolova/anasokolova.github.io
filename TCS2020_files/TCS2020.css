@@ -250,14 +250,6 @@
     line-height: 16px;
     opacity: 1.00;
 }
-.style_10 {
-    font-family: 'Verdana', sans-serif;
-    font-size: 13px;
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-}
 .style_SkipStroke {
     background: transparent;
     opacity: 1.00;
@@ -265,6 +257,14 @@
 .style_SkipStroke_1 {
     background: transparent;
     opacity: 1.00;
+}
+.style_10 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
 }
 .style_11 {
     color: rgb(0, 0, 0);
@@ -526,7 +526,7 @@
 .graphic_textbox_layout_style_default {
     padding: 4px;
 }
-.graphic_textbox_layout_style_default_External_890_343 {
+.graphic_textbox_layout_style_default_External_905_467 {
     position: relative;
 }
 .graphic_textbox_layout_style_default_External_253_207 {
@@ -544,7 +544,7 @@
 .graphic_textbox_layout_style_default_External_890_56 {
     position: relative;
 }
-.graphic_textbox_layout_style_default_External_877_1563 {
+.graphic_textbox_layout_style_default_External_877_1755 {
     position: relative;
 }
 .graphic_textbox_layout_style_default_External_100_41 {
