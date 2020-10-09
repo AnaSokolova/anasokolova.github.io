@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Optional CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>rewrite systems</title>
+</head>
+
+<body>
+  <h1 class="display-1">Rewrite Systems</h1>
+
+  <div class="centerelm">
+    <button id="button1" onclick="rule1()" type="button" class="btn-stl btn btn-lg btn-outline-light">rule 1</button>
+    <button id="button2" onclick="rule2()" type="button" class="btn-stl btn btn-lg btn-outline-light rules">rule 2</button>
+    <button id="button3" onclick="rule3()" type="button" class="btn-stl btn btn-lg btn-outline-light rules">rule 3</button>
+    <button id="button4" onclick="rule4()" type="button" class="btn-stl btn btn-lg btn-outline-light rules">rule 4</button>
+    <button id="button5" onclick="rule5()" type="button" class="btn-stl btn btn-lg btn-outline-light rules">rule 5</button>
+    <button id="button6" onclick="rule6()" type="button" class="btn-stl btn btn-lg btn-outline-light rules">rule 6</button>
+    <button id="button7" onclick="rule7()" type="button" class="btn-stl btn btn-lg btn-outline-light rules">rule 7</button>
+    <button id="button8" onclick="rule8()" type="button" class="btn-stl btn btn-lg btn-outline-light rules">rule 8</button>
+    <button id="button9" onclick="rule9()" type="button" class="btn-stl btn btn-lg btn-outline-light rules">rule 9</button>
+    <button id="button10" onclick="rule10()" type="button" class="btn-stl btn btn-lg btn-outline-light rules">rule 10</button>
+  </div>
+
+  <div class="centerelm">
+    <p id="inst"><br></p>
+  </div>
+
+  <!-- IDEA: Input field with buttons for entering the rewrite-word and exit -->
+
+  <div class="fixed-bottom">
+
+    <div class="input-group input-group-lg mb-3">
+      <div class="input-group-prepend">
+        <button onclick="resy()" class="btn btn-secondary" type="button" id="button-addon1">Enter</button>
+      </div>
+
+      <input id="enstr" type="text" class="form-control" placeholder="Please enter a word to rewrite" type="text" aria-label="input for word to rewrite" aria-describedby="button-addon1">
+
+      <div class="input-group-append">
+        <button class="btn btn-secondary" type="button" id="button-addon2">Exit</button>
+      </div>
+    </div>
+
+    <!-- IDEA: Input field with buttons for entering rules -->
+
+    <div class="input-group input-group-lg">
+      <div class="input-group-prepend">
+        <button onclick="getrules()" class="btn btn-secondary" type="button" id="button-addon1">Enter</button>
+      </div>
+
+      <input id="rule1" class="form-control" type="text" placeholder="Please enter rule 1" aria-label="Rule 1">
+      <input id="rule2" class="form-control rules" type="text" placeholder="Please enter rule 2" aria-label="Rule 2">
+      <input id="rule3" class="form-control rules" type="text" placeholder="Please enter rule 3" aria-label="Rule 3">
+      <input id="rule4" class="form-control rules" type="text" placeholder="Please enter rule 4" aria-label="Rule 4">
+      <input id="rule5" class="form-control rules" type="text" placeholder="Please enter rule 5" aria-label="Rule 5">
+
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rules</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" onclick="int1(), rue1()">1 rule</a>
+          <a class="dropdown-item" onclick="int2(), rue2()">2 rules</a>
+          <a class="dropdown-item" onclick="int3(), rue3()">3 rules</a>
+          <a class="dropdown-item" onclick="int4(), rue4()">4 rules</a>
+          <a class="dropdown-item" onclick="int5(), rue5()">5 rules</a>
+          <a class="dropdown-item" onclick="int6(), rue6()">6 rules</a>
+          <a class="dropdown-item" onclick="int7(), rue7()">7 rules</a>
+          <a class="dropdown-item" onclick="int8(), rue8()">8 rules</a>
+          <a class="dropdown-item" onclick="int9(), rue9()">9 rules</a>
+          <a class="dropdown-item" onclick="int10(), rue10()">10 rules</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group input-group-lg">
+      <input id="rule6" class="form-control rules" type="text" placeholder="Please enter rule 6" aria-label="Rule 6">
+      <input id="rule7" class="form-control rules" type="text" placeholder="Please enter rule 7" aria-label="Rule 7">
+      <input id="rule8" class="form-control rules" type="text" placeholder="Please enter rule 8" aria-label="Rule 8">
+      <input id="rule9" class="form-control rules" type="text" placeholder="Please enter rule 9" aria-label="Rule 9">
+      <input id="rule10" class="form-control rules" type="text" placeholder="Please enter rule 10" aria-label="Rule 10">
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="script.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

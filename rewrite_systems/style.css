@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  font-family: helvetica;
+  margin-top: 20px;
+  margin-bottom: 140px;
+}
+
+p {
+  color: white;
+  font-size: 30px;
+  font-family: helvetica;
+}
+
+.centerelm {
+  text-align: center;
+}
+
+.btn-stl {
+  font-weight: bold;
+  outline-width: thick;
+}
+
+.btn-stl:hover {
+  color: grey;
+}
+
+.rules {
+  display: none;
+}
