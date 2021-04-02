@@ -107,12 +107,12 @@
 }
 .paragraph_style_4 {
     color: rgb(0, 0, 0);
-    font-family: 'Verdana-Bold', 'Verdana', sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-size: 13px;
     font-stretch: normal;
     font-style: normal;
     font-variant: normal;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0;
     line-height: 16px;
     margin-bottom: 0px;
@@ -120,8 +120,8 @@
     margin-right: 0px;
     margin-top: 0px;
     opacity: 1.00;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-top: 8px;
     text-align: left;
     text-decoration: none;
     text-indent: 0px;
@@ -197,8 +197,8 @@
     margin-right: 0px;
     margin-top: 0px;
     opacity: 1.00;
-    padding-bottom: 5px;
-    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     text-align: left;
     text-decoration: none;
     text-indent: 0px;
@@ -219,8 +219,8 @@
     margin-right: 0px;
     margin-top: 0px;
     opacity: 1.00;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-top: 8px;
     text-align: left;
     text-decoration: none;
     text-indent: 0px;
@@ -251,28 +251,6 @@
 .paragraph_style_10 {
     color: rgb(0, 0, 0);
     font-family: 'Verdana', sans-serif;
-    font-size: 13px;
-    font-stretch: normal;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 16px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    opacity: 1.00;
-    padding-bottom: 5px;
-    padding-top: 8px;
-    text-align: left;
-    text-decoration: none;
-    text-indent: 0px;
-    text-transform: none;
-}
-.paragraph_style_11 {
-    color: rgb(0, 0, 0);
-    font-family: 'Verdana', sans-serif;
     font-size: 11px;
     font-stretch: normal;
     font-style: normal;
@@ -292,7 +270,7 @@
     text-indent: 0px;
     text-transform: none;
 }
-.paragraph_style_12 {
+.paragraph_style_11 {
     color: rgb(0, 0, 0);
     font-family: 'Verdana-Bold', 'Verdana', sans-serif;
     font-size: 18px;
@@ -314,7 +292,7 @@
     text-indent: 0px;
     text-transform: none;
 }
-.paragraph_style_13 {
+.paragraph_style_12 {
     color: rgb(0, 0, 0);
     font-family: 'Verdana-Italic', 'Verdana', sans-serif;
     font-size: 11px;
@@ -336,6 +314,10 @@
     text-indent: 0px;
     text-transform: none;
 }
+.style_5 {
+    line-height: 17px;
+    text-decoration: none;
+}
 .style_SkipStroke {
     background: transparent;
     opacity: 1.00;
@@ -344,11 +326,7 @@
     background: transparent;
     opacity: 1.00;
 }
-.style_5 {
-    line-height: 17px;
-    text-decoration: none;
-}
-.paragraph_style_14 {
+.paragraph_style_13 {
     color: rgb(126, 17, 17);
     font-family: 'Verdana', sans-serif;
     font-size: 14px;
@@ -429,13 +407,13 @@
 .graphic_textbox_layout_style_default_External_253_207 {
     position: relative;
 }
+.graphic_textbox_layout_style_default_External_909_3793 {
+    position: relative;
+}
 .graphic_textbox_layout_style_default_External_100_41 {
     position: relative;
 }
 .graphic_textbox_layout_style_default_External_899_60 {
-    position: relative;
-}
-.graphic_textbox_layout_style_default_External_909_3689 {
     position: relative;
 }
 .graphic_textbox_layout_style_default_External_270_207 {
