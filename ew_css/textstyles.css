@@ -213,3 +213,13 @@ a.outerlink{text-decoration:none}
  margin:0;
  color: #D4D4D4;
  word-wrap: break-word;}
+.Style63{font-family:  'Helvetica' ,'Arial' ,sans-serif ;
+ font-size: 24px; 
+ font-weight:normal; 
+ color: #FE2F91;
+ word-wrap: break-word;}
+div.animated{height: 100%;width: 100%;}
+div.ew-animation-effect{height: 100%;width: 100%;}
+.ew-shape-border{top:0;left:0;height:100%;width:100%;position:absolute;overflow:visible;pointer-events:none;}
+.ew-sb-hidden{display:none}
+.ew-sb-pinned{position: fixed;z-index: 100000 !important;}
