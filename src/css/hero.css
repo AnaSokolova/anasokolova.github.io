@@ -1,0 +1,254 @@
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4rem;
+  align-items: end;
+  padding-top: 4vh;
+  padding-bottom: 0rem;
+}
+
+.hero-text{
+  margin-top: 2rem;
+}
+
+.hero-text .logo {
+  height: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo-link {
+  width: fit-content;
+  display: block;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  letter-spacing: -1%;
+  color: var(--text-l0);
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+.title {
+  font-size: 1.25rem;
+  margin-top: .5rem;
+  color: rgb(75, 74, 74);
+}
+
+.contact-grid {
+  display: inline-grid;
+  grid-template-columns: auto 1.5px auto;
+  column-gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.contact-grid::before {
+  content: '';
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  background: var(--text-l1);
+  border-radius: 999px;
+  margin: 0.5rem 0;
+}
+
+.contact-cell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: var(--text-l1);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.contact-cell:nth-of-type(1) { grid-column: 1; grid-row: 1; }
+.contact-cell:nth-of-type(2) { grid-column: 1; grid-row: 2; }
+.contact-cell:nth-of-type(3) { grid-column: 3; grid-row: 1; }
+.contact-cell:nth-of-type(4) { grid-column: 3; grid-row: 2; }
+
+.contact-cell img,
+.contact-cell svg {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.contact-cell a:hover {
+  color: var(--primary);
+}
+
+.contact-cell--link a {
+  color: var(--primary);
+}
+
+.contact-hr {
+  display: none;
+  grid-column: 1 / -1;
+  border: none;
+  height: 1.5px;
+  background: var(--text-l1);
+  border-radius: 999px;
+  margin: 0.5rem 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.hero-image-block {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  gap: 0.75rem;
+}
+
+.calm_logo {
+  max-width: fit-content;
+  height: 100%;
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 4px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: .3s ease;
+}
+
+.calm_logo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.image-card {
+  width: 320px;
+  height: 320px;
+  border-radius: var(--radius-card);
+  border: 2px solid var(--border);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.hero-image {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  display: block;
+  border-radius: 5px;
+}
+
+@media (max-width: 1280px) {
+  .hero-image-block {
+    align-self: center;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .contact-grid::before {
+    display: none;
+  }
+
+  .contact-grid .contact-cell {
+    grid-column: 1;
+    grid-row: auto;
+    white-space: normal;
+  }
+
+  .contact-hr {
+    display: block;
+  }
+}
+
+@media (max-width: 1118px) {
+  .hero {
+    gap: 3rem;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-image-block {
+    width: 280px;
+  }
+  .image-card {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .hero-image-block {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    order: -1;
+  }
+
+  .image-card {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text .topline {
+    font-size: 1.125rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    width: 100%;
+  }
+
+  .contact-cell {
+    font-size: 1.125rem;
+  }
+
+  .contact-cell + .contact-cell {
+    border-top: 1px solid var(--text-l2);
+  }
+
+  .contact-hr {
+    height: 1px;
+    background: var(--text-l2);
+    margin: 0;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: fit-content;
+  }
+}
+
+@media screen and (width < 465px) {
+  .calm_logo {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+  }
+}
